@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Estuda+ | Plataforma de Estudos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Estuda<span>+</span></div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#disciplinas">Disciplinas</a>
+            <a href="#simulados">Simulados</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <div>
+                <h1>Aprende. Pratica. <span>Conquista.</span></h1>
+
+                <p>
+                    Uma plataforma para estudar, praticar exercícios
+                    e testar os teus conhecimentos através de simulados.
+                </p>
+
+                <button onclick="mostrarSimulado()">
+                    Começar um simulado
+                </button>
+            </div>
+        </section>
+
+
+        <section id="disciplinas" class="section">
+
+            <h2>Escolha uma disciplina</h2>
+
+            <div class="disciplinas">
+
+                <div class="card" onclick="selecionarDisciplina('Química')">
+                    <div class="icone">🧪</div>
+                    <h3>Química</h3>
+                    <p>Estude química desde o básico até ao nível avançado.</p>
+                </div>
+
+                <div class="card" onclick="selecionarDisciplina('Biologia')">
+                    <div class="icone">🧬</div>
+                    <h3>Biologia</h3>
+                    <p>Aprenda sobre a vida, células, organismos e muito mais.</p>
+                </div>
+
+                <div class="card" onclick="selecionarDisciplina('Matemática')">
+                    <div class="icone">📐</div>
+                    <h3>Matemática</h3>
+                    <p>Exercícios desde matemática básica até conteúdos avançados.</p>
+                </div>
+
+                <div class="card" onclick="selecionarDisciplina('Física')">
+                    <div class="icone">⚡</div>
+                    <h3>Física</h3>
+                    <p>Aprenda movimento, forças, energia, eletricidade e mais.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="simulados" class="section simulados">
+
+            <h2>Simulados</h2>
+
+            <p>
+                Teste os teus conhecimentos respondendo às questões.
+            </p>
+
+            <button onclick="mostrarSimulado()">
+                Fazer simulado
+            </button>
+
+        </section>
+
+
+        <section id="area-simulado" class="section escondido">
+
+            <h2 id="tituloSimulado">Simulado</h2>
+
+            <div id="questao"></div>
+
+            <div id="opcoes"></div>
+
+            <button id="proxima" onclick="proximaQuestao()">
+                Próxima questão
+            </button>
+
+            <div id="resultado"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Estuda+ — Plataforma de Estudos</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
