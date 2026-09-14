@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,62 +12,171 @@
 
 <body>
 
-    <header>
-        <div class="logo">Estuda<span>+</span></div>
+    <!-- CABEÇALHO -->
+
+    <header class="cabecalho">
+
+        <div class="logo">
+            Estuda<span>+</span>
+        </div>
 
         <nav>
             <a href="#inicio">Início</a>
             <a href="#disciplinas">Disciplinas</a>
             <a href="#simulados">Simulados</a>
+            <a href="#desempenho">Desempenho</a>
         </nav>
+
     </header>
+
+
+    <!-- PÁGINA INICIAL -->
 
     <main>
 
         <section id="inicio" class="hero">
-            <div>
-                <h1>Aprende. Pratica. <span>Conquista.</span></h1>
 
-                <p>
-                    Uma plataforma para estudar, praticar exercícios
-                    e testar os teus conhecimentos através de simulados.
+            <div class="hero-conteudo">
+
+                <p class="pequeno-titulo">
+                    PLATAFORMA DE ESTUDOS
                 </p>
 
-                <button onclick="mostrarSimulado()">
-                    Começar um simulado
-                </button>
+                <h1>
+                    Aprende hoje.<br>
+                    Conquista amanhã.
+                </h1>
+
+                <p class="descricao">
+                    Estuda conteúdos, pratica exercícios e testa
+                    os teus conhecimentos através de simulados.
+                </p>
+
+                <div class="botoes">
+
+                    <button onclick="irParaDisciplinas()">
+                        Começar a estudar
+                    </button>
+
+                    <button class="botao-secundario"
+                        onclick="abrirSimuladoGeral()">
+                        Fazer simulado
+                    </button>
+
+                </div>
+
             </div>
+
         </section>
 
 
-        <section id="disciplinas" class="section">
+        <!-- DISCIPLINAS -->
 
-            <h2>Escolha uma disciplina</h2>
+        <section id="disciplinas" class="secao">
 
-            <div class="disciplinas">
+            <div class="titulo-secao">
 
-                <div class="card" onclick="selecionarDisciplina('Química')">
-                    <div class="icone">🧪</div>
+                <p>ESCOLHA UMA DISCIPLINA</p>
+
+                <h2>
+                    O que queres estudar hoje?
+                </h2>
+
+            </div>
+
+
+            <div class="grade-disciplinas">
+
+
+                <!-- QUÍMICA -->
+
+                <div class="disciplina-card"
+                    onclick="abrirDisciplina('Química')">
+
+                    <div class="icone-disciplina">
+                        🧪
+                    </div>
+
                     <h3>Química</h3>
-                    <p>Estude química desde o básico até ao nível avançado.</p>
+
+                    <p>
+                        Matéria, átomos, tabela periódica,
+                        reações, estequiometria e muito mais.
+                    </p>
+
+                    <span>
+                        Estudar →
+                    </span>
+
                 </div>
 
-                <div class="card" onclick="selecionarDisciplina('Biologia')">
-                    <div class="icone">🧬</div>
+
+                <!-- BIOLOGIA -->
+
+                <div class="disciplina-card"
+                    onclick="abrirDisciplina('Biologia')">
+
+                    <div class="icone-disciplina">
+                        🧬
+                    </div>
+
                     <h3>Biologia</h3>
-                    <p>Aprenda sobre a vida, células, organismos e muito mais.</p>
+
+                    <p>
+                        Células, genética, anatomia,
+                        fisiologia, ecologia e muito mais.
+                    </p>
+
+                    <span>
+                        Estudar →
+                    </span>
+
                 </div>
 
-                <div class="card" onclick="selecionarDisciplina('Matemática')">
-                    <div class="icone">📐</div>
+
+                <!-- MATEMÁTICA -->
+
+                <div class="disciplina-card"
+                    onclick="abrirDisciplina('Matemática')">
+
+                    <div class="icone-disciplina">
+                        📐
+                    </div>
+
                     <h3>Matemática</h3>
-                    <p>Exercícios desde matemática básica até conteúdos avançados.</p>
+
+                    <p>
+                        Aritmética, álgebra, geometria,
+                        funções e cálculo.
+                    </p>
+
+                    <span>
+                        Estudar →
+                    </span>
+
                 </div>
 
-                <div class="card" onclick="selecionarDisciplina('Física')">
-                    <div class="icone">⚡</div>
+
+                <!-- FÍSICA -->
+
+                <div class="disciplina-card"
+                    onclick="abrirDisciplina('Física')">
+
+                    <div class="icone-disciplina">
+                        ⚡
+                    </div>
+
                     <h3>Física</h3>
-                    <p>Aprenda movimento, forças, energia, eletricidade e mais.</p>
+
+                    <p>
+                        Movimento, forças, energia,
+                        eletricidade e muito mais.
+                    </p>
+
+                    <span>
+                        Estudar →
+                    </span>
+
                 </div>
 
             </div>
@@ -74,45 +184,333 @@
         </section>
 
 
-        <section id="simulados" class="section simulados">
+        <!-- ÁREA DA DISCIPLINA -->
 
-            <h2>Simulados</h2>
+        <section id="area-disciplina"
+            class="secao area-escondida">
 
-            <p>
-                Teste os teus conhecimentos respondendo às questões.
-            </p>
-
-            <button onclick="mostrarSimulado()">
-                Fazer simulado
+            <button class="voltar"
+                onclick="voltarParaDisciplinas()">
+                ← Voltar
             </button>
+
+            <div class="disciplina-header">
+
+                <div id="icone-disciplina-grande">
+                    🧪
+                </div>
+
+                <div>
+
+                    <p>DISCIPLINA</p>
+
+                    <h2 id="nome-disciplina">
+                        Química
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="niveis">
+
+                <button onclick="selecionarNivel('Básico')">
+                    Básico
+                </button>
+
+                <button onclick="selecionarNivel('Médio')">
+                    Médio
+                </button>
+
+                <button onclick="selecionarNivel('Avançado')">
+                    Avançado
+                </button>
+
+                <button onclick="selecionarNivel('Universitário')">
+                    Universitário
+                </button>
+
+            </div>
+
+
+            <div id="conteudo-disciplina"
+                class="conteudo-disciplina">
+
+                <h3>
+                    Escolha um nível para começar.
+                </h3>
+
+                <p>
+                    O conteúdo da disciplina aparecerá aqui.
+                </p>
+
+            </div>
 
         </section>
 
 
-        <section id="area-simulado" class="section escondido">
+        <!-- SIMULADOS -->
 
-            <h2 id="tituloSimulado">Simulado</h2>
+        <section id="simulados" class="secao simulados">
 
-            <div id="questao"></div>
+            <div class="titulo-secao">
 
-            <div id="opcoes"></div>
+                <p>TESTE OS TEUS CONHECIMENTOS</p>
 
-            <button id="proxima" onclick="proximaQuestao()">
-                Próxima questão
-            </button>
+                <h2>
+                    Simulados
+                </h2>
 
-            <div id="resultado"></div>
+            </div>
+
+
+            <div class="simulados-grid">
+
+                <div class="simulado-card">
+
+                    <span>🧪</span>
+
+                    <h3>
+                        Simulado de Química
+                    </h3>
+
+                    <p>
+                        Teste os teus conhecimentos
+                        em Química.
+                    </p>
+
+                    <button onclick="iniciarSimulado('Química')">
+                        Começar
+                    </button>
+
+                </div>
+
+
+                <div class="simulado-card">
+
+                    <span>🧬</span>
+
+                    <h3>
+                        Simulado de Biologia
+                    </h3>
+
+                    <p>
+                        Teste os teus conhecimentos
+                        em Biologia.
+                    </p>
+
+                    <button onclick="iniciarSimulado('Biologia')">
+                        Começar
+                    </button>
+
+                </div>
+
+
+                <div class="simulado-card">
+
+                    <span>📐</span>
+
+                    <h3>
+                        Simulado de Matemática
+                    </h3>
+
+                    <p>
+                        Resolva questões de Matemática.
+                    </p>
+
+                    <button onclick="iniciarSimulado('Matemática')">
+                        Começar
+                    </button>
+
+                </div>
+
+
+                <div class="simulado-card">
+
+                    <span>⚡</span>
+
+                    <h3>
+                        Simulado de Física
+                    </h3>
+
+                    <p>
+                        Teste os teus conhecimentos
+                        em Física.
+                    </p>
+
+                    <button onclick="iniciarSimulado('Física')">
+                        Começar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ÁREA DO SIMULADO -->
+
+        <section id="area-simulado"
+            class="secao area-escondida">
+
+            <div class="simulado-topo">
+
+                <button class="voltar"
+                    onclick="fecharSimulado()">
+                    ← Sair
+                </button>
+
+                <div id="cronometro">
+                    05:00
+                </div>
+
+            </div>
+
+
+            <div class="progresso">
+
+                <div id="barra-progresso"></div>
+
+            </div>
+
+
+            <div class="questao-container">
+
+                <p id="numero-questao">
+                    Questão 1
+                </p>
+
+                <h2 id="texto-questao">
+                    Pergunta
+                </h2>
+
+                <div id="opcoes">
+                </div>
+
+                <button id="botao-proxima"
+                    onclick="proximaQuestao()">
+
+                    Próxima questão →
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULTADO -->
+
+        <section id="resultado"
+            class="secao area-escondida">
+
+            <div class="resultado-box">
+
+                <div class="trofeu">
+                    🏆
+                </div>
+
+                <h2>
+                    Simulado concluído!
+                </h2>
+
+                <p id="texto-resultado">
+                    Resultado
+                </p>
+
+                <div id="percentagem">
+                    0%
+                </div>
+
+                <button onclick="voltarInicio()">
+                    Voltar ao início
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- DESEMPENHO -->
+
+        <section id="desempenho"
+            class="secao desempenho">
+
+            <div class="titulo-secao">
+
+                <p>ACOMPANHA A TUA EVOLUÇÃO</p>
+
+                <h2>
+                    Meu desempenho
+                </h2>
+
+            </div>
+
+
+            <div class="estatisticas">
+
+                <div>
+                    <strong id="simulados-realizados">
+                        0
+                    </strong>
+
+                    <span>
+                        Simulados
+                    </span>
+                </div>
+
+
+                <div>
+                    <strong id="melhor-percentagem">
+                        0%
+                    </strong>
+
+                    <span>
+                        Melhor resultado
+                    </span>
+                </div>
+
+
+                <div>
+                    <strong id="questoes-respondidas">
+                        0
+                    </strong>
+
+                    <span>
+                        Questões
+                    </span>
+                </div>
+
+            </div>
 
         </section>
 
     </main>
 
 
+    <!-- RODAPÉ -->
+
     <footer>
-        <p>© 2026 Estuda+ — Plataforma de Estudos</p>
+
+        <div class="logo">
+            Estuda<span>+</span>
+        </div>
+
+        <p>
+            Plataforma de estudos e preparação.
+        </p>
+
+        <p class="copyright">
+            © 2026 Estuda+.
+        </p>
+
     </footer>
+
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
