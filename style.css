@@ -548,3 +548,262 @@ footer p {
     }
 
 }
+/* ==========================================================
+   ESTUDA+ — ESTILO DO SISTEMA DE QUESTÕES
+   ========================================================== */
+
+
+/* ==========================================================
+   INFORMAÇÕES DA QUESTÃO
+   ========================================================== */
+
+.informacao-questao {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 15px;
+
+    font-size: 0.85rem;
+}
+
+
+.informacao-questao span {
+
+    background: #f1f5f9;
+
+    color: #334155;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    border: 1px solid #e2e8f0;
+}
+
+
+/* ==========================================================
+   OPÇÕES
+   ========================================================== */
+
+.opcao {
+
+    padding: 15px;
+
+    margin: 10px 0;
+
+    border: 2px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    background: white;
+
+    transition:
+        transform 0.2s,
+        border-color 0.2s,
+        background 0.2s;
+}
+
+
+.opcao:hover {
+
+    transform: translateY(-2px);
+
+    border-color: #64748b;
+
+}
+
+
+.opcao.selecionada {
+
+    border-color: #2563eb;
+
+    background: #eff6ff;
+
+}
+
+
+/* ==========================================================
+   RESPOSTA CORRETA
+   ========================================================== */
+
+.opcao.correta {
+
+    border-color: #16a34a;
+
+    background: #dcfce7;
+
+    color: #166534;
+
+    font-weight: 600;
+}
+
+
+/* ==========================================================
+   RESPOSTA INCORRETA
+   ========================================================== */
+
+.opcao.incorreta {
+
+    border-color: #dc2626;
+
+    background: #fee2e2;
+
+    color: #991b1b;
+
+    font-weight: 600;
+}
+
+
+/* ==========================================================
+   EXPLICAÇÃO
+   ========================================================== */
+
+.explicacao-questao {
+
+    margin-top: 18px;
+
+    padding: 16px;
+
+    border-radius: 12px;
+
+    background: #f8fafc;
+
+    border-left: 5px solid #2563eb;
+
+    line-height: 1.6;
+
+}
+
+
+.explicacao-questao strong {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 1rem;
+}
+
+
+.explicacao-questao p {
+
+    margin: 0;
+
+    color: #475569;
+
+}
+
+
+/* ==========================================================
+   BARRA DE PROGRESSO
+   ========================================================== */
+
+#barra-progresso {
+
+    transition: width 0.35s ease;
+
+}
+
+
+/* ==========================================================
+   CRONÓMETRO
+   ========================================================== */
+
+#cronometro {
+
+    font-weight: 700;
+
+    font-variant-numeric: tabular-nums;
+}
+
+
+/* ==========================================================
+   RESULTADO
+   ========================================================== */
+
+#percentagem {
+
+    font-size: 3rem;
+
+    font-weight: 800;
+
+}
+
+
+/* ==========================================================
+   BOTÕES
+   ========================================================== */
+
+button {
+
+    transition:
+        transform 0.2s,
+        opacity 0.2s;
+}
+
+
+button:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+button:active {
+
+    transform: translateY(0);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVIDADE
+   ========================================================== */
+
+@media (max-width: 600px) {
+
+    .informacao-questao {
+
+        font-size: 0.78rem;
+
+    }
+
+
+    .informacao-questao span {
+
+        padding: 5px 8px;
+
+    }
+
+
+    .opcao {
+
+        padding: 13px;
+
+        font-size: 0.95rem;
+
+    }
+
+
+    .explicacao-questao {
+
+        padding: 13px;
+
+        font-size: 0.9rem;
+
+    }
+
+
+    #percentagem {
+
+        font-size: 2.4rem;
+
+    }
+
+}
