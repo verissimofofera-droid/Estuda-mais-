@@ -8,7 +8,7 @@
 // BANCO DE QUESTÕES
 // ==========================================================
 
-// const bancoQuestoesBloco1 = [
+const bancoQuestoesBloco1 = [
 
   // =========================================================
   // 7ª CLASSE — QUESTÕES 1 a 34
