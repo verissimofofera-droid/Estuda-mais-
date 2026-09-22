@@ -1923,6 +1923,7 @@ let indiceQuestao = 0;
 let pontuacao = 0;
 
 let respostaSelecionada = null;
+let respostaJaAvaliada = false;
 
 let tempo = 300;
 
@@ -2440,6 +2441,7 @@ function mostrarQuestao() {
 
 
     respostaSelecionada = null;
+    respostaJaAvaliada = false;
 
 
     // Metadados da questão
@@ -2549,12 +2551,12 @@ function mostrarQuestao() {
                 function() {
 
                     if (
-                        !simuladoEmAndamento
+                        !simuladoEmAndamento ||
+                        respostaJaAvaliada
                     ) {
 
                         return;
                     }
-
 
                     document
                         .querySelectorAll(
@@ -2562,23 +2564,20 @@ function mostrarQuestao() {
                         )
                         .forEach(
                             item => {
-
                                 item.classList.remove(
                                     "selecionada"
                                 );
-
                             }
                         );
-
 
                     elemento.classList.add(
                         "selecionada"
                     );
 
-
                     respostaSelecionada =
                         alternativa.indice;
 
+                    avaliarRespostaSelecionada();
                 };
 
 
@@ -2605,7 +2604,7 @@ function atualizarProgresso() {
 
 
     const respondida =
-        indiceQuestao;
+        indiceQuestao + (respostaJaAvaliada ? 1 : 0);
 
 
     const progresso =
@@ -2635,12 +2634,45 @@ function atualizarProgresso() {
 function proximaQuestao() {
 
     if (
-        respostaSelecionada === null
+        !respostaJaAvaliada
     ) {
 
         alert(
             "Escolhe uma resposta primeiro."
         );
+
+        return;
+    }
+
+
+    indiceQuestao++;
+
+
+    if (
+        indiceQuestao <
+        perguntasAtuais.length
+    ) {
+
+        mostrarQuestao();
+
+    } else {
+
+        terminarSimulado();
+
+    }
+}
+
+
+// ==========================================================
+// AVALIAR RESPOSTA IMEDIATAMENTE
+// ==========================================================
+
+function avaliarRespostaSelecionada() {
+
+    if (
+        respostaSelecionada === null ||
+        respostaJaAvaliada
+    ) {
 
         return;
     }
@@ -2652,13 +2684,9 @@ function proximaQuestao() {
         ];
 
 
-    const respostaCorreta =
-        pergunta.resposta;
-
-
     const acertou =
         respostaSelecionada ===
-        respostaCorreta;
+        pergunta.resposta;
 
 
     if (acertou) {
@@ -2668,10 +2696,15 @@ function proximaQuestao() {
     }
 
 
+    respostaJaAvaliada = true;
+
     mostrarResultadoResposta(
         pergunta,
         acertou
     );
+
+
+    atualizarProgresso();
 }
 
 
@@ -2691,7 +2724,7 @@ function mostrarResultadoResposta(
 
 
     opcoes.forEach(
-        (opcao, indice) => {
+        opcao => {
 
             opcao.style.pointerEvents =
                 "none";
@@ -2699,9 +2732,6 @@ function mostrarResultadoResposta(
         }
     );
 
-
-    // Descobrir a resposta correta
-    // pelo texto.
 
     const respostaCorretaTexto =
         pergunta.opcoes[
@@ -2750,8 +2780,6 @@ function mostrarResultadoResposta(
     }
 
 
-    // Criar explicação
-
     const explicacaoAnterior =
         document.querySelector(
             ".explicacao-questao"
@@ -2788,6 +2816,12 @@ function mostrarResultadoResposta(
         </strong>
 
         ${
+            !acertou
+                ? `<p><b>Resposta certa:</b> ${respostaCorretaTexto}</p>`
+                : ""
+        }
+
+        ${
             pergunta.explicacao
                 ? `<p>${pergunta.explicacao}</p>`
                 : ""
@@ -2803,10 +2837,6 @@ function mostrarResultadoResposta(
     );
 
 
-    respostaSelecionada =
-        "respondida";
-
-
     const botao =
         document.getElementById(
             "botao-proxima"
@@ -2819,45 +2849,12 @@ function mostrarResultadoResposta(
             indiceQuestao ===
             perguntasAtuais.length - 1
 
-                ? "Ver resultado"
+                ? "Ver resultado ✓"
 
-                : "Próxima questão";
+                : "Próxima questão →";
+
+        botao.disabled = false;
     }
-
-
-    // Pequeno atraso para o estudante
-    // ler a explicação antes de avançar.
-
-    setTimeout(
-        () => {
-
-            if (
-                !simuladoEmAndamento
-            ) {
-
-                return;
-            }
-
-
-            indiceQuestao++;
-
-
-            if (
-                indiceQuestao <
-                perguntasAtuais.length
-            ) {
-
-                mostrarQuestao();
-
-            } else {
-
-                terminarSimulado();
-
-            }
-
-        },
-        1200
-    );
 }
 
 
@@ -2926,6 +2923,21 @@ function terminarSimulado() {
         "percentagem"
     ).textContent =
         percentagem + "%";
+
+
+    const resultadoAcertos = document.getElementById("resultado-acertos");
+    const resultadoErros = document.getElementById("resultado-erros");
+    const resultadoTotal = document.getElementById("resultado-total");
+    const resultadoDisciplina = document.getElementById("resultado-disciplina");
+    const resultadoClasse = document.getElementById("resultado-classe");
+    const resultadoNivel = document.getElementById("resultado-nivel");
+
+    if (resultadoAcertos) resultadoAcertos.textContent = pontuacao;
+    if (resultadoErros) resultadoErros.textContent = total - pontuacao;
+    if (resultadoTotal) resultadoTotal.textContent = total;
+    if (resultadoDisciplina) resultadoDisciplina.textContent = disciplinaAtual || "Geral";
+    if (resultadoClasse) resultadoClasse.textContent = classeAtual || "Todas";
+    if (resultadoNivel) resultadoNivel.textContent = nivelAtual || "Todos";
 
 
     guardarDesempenho(
