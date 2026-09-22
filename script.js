@@ -2056,6 +2056,39 @@ function contarQuestoesDisciplina(
 
 
 // ==========================================================
+// SELECIONAR CLASSE
+// ==========================================================
+
+function selecionarClasse(classe) {
+
+    classeAtual = classe;
+    nivelAtual = "";
+
+    const questoesClasse = bancoQuestoes.filter(
+        questao =>
+            questao.disciplina === disciplinaAtual &&
+            questao.classe === classe
+    );
+
+    document.getElementById("conteudo-disciplina").innerHTML = `
+        <h3>
+            ${disciplinaAtual} — ${classe} classe
+        </h3>
+
+        <p>
+            Foram encontradas
+            <strong>${questoesClasse.length}</strong>
+            questões para esta classe.
+        </p>
+
+        <p style="margin-top:15px;">
+            Agora escolhe um nível acima para começar.
+        </p>
+    `;
+}
+
+
+// ==========================================================
 // SELECIONAR NÍVEL
 // ==========================================================
 
@@ -2063,49 +2096,46 @@ function selecionarNivel(nivel) {
 
     nivelAtual = nivel;
 
-    const questoesNivel =
-        bancoQuestoes.filter(
-            questao =>
-                questao.disciplina === disciplinaAtual &&
-                questao.nivel === nivel
+    let questoesNivel = bancoQuestoes.filter(
+        questao =>
+            questao.disciplina === disciplinaAtual &&
+            questao.nivel === nivel
+    );
+
+    if (classeAtual) {
+        questoesNivel = questoesNivel.filter(
+            questao => questao.classe === classeAtual
         );
+    }
 
+    const classeTexto = classeAtual
+        ? ` — ${classeAtual} classe`
+        : "";
 
-    document.getElementById(
-        "conteudo-disciplina"
-    ).innerHTML = `
+    document.getElementById("conteudo-disciplina").innerHTML = `
 
         <h3>
-            ${disciplinaAtual}
+            ${disciplinaAtual}${classeTexto}
             — Nível ${nivel}
         </h3>
 
         <p>
             Foram encontradas
-            <strong>
-                ${questoesNivel.length}
-            </strong>
-            questões neste nível.
+            <strong>${questoesNivel.length}</strong>
+            questões nesta seleção.
         </p>
 
         <div class="conteudo-opcoes">
 
-            <p>
-                📖 Conteúdos teóricos
-            </p>
-
-            <p>
-                📝 Exercícios
-            </p>
-
-            <p>
-                🎯 Simulados
-            </p>
+            <p>📖 Conteúdos teóricos</p>
+            <p>📝 Exercícios</p>
+            <p>🎯 Simulados</p>
 
             <button
                 onclick="iniciarSimulado(
                     '${disciplinaAtual}',
-                    '${nivel}'
+                    '${nivel}',
+                    '${classeAtual}'
                 )">
 
                 Começar exercícios
@@ -2164,12 +2194,13 @@ function irParaDisciplinas() {
 
 function iniciarSimulado(
     disciplina,
-    nivel = ""
+    nivel = "",
+    classe = ""
 ) {
 
     disciplinaAtual = disciplina;
     nivelAtual = nivel;
-
+    classeAtual = classe;
 
     let bancoFiltrado =
         bancoQuestoes.filter(
@@ -2187,6 +2218,15 @@ function iniciarSimulado(
             bancoFiltrado.filter(
                 questao =>
                     questao.nivel === nivel
+            );
+    }
+
+    if (classe) {
+
+        bancoFiltrado =
+            bancoFiltrado.filter(
+                questao =>
+                    questao.classe === classe
             );
     }
 
