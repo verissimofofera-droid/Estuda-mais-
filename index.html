@@ -103,7 +103,10 @@
     </div>
     <div class="progresso" aria-label="Progresso do simulado"><div id="barra-progresso"></div></div>
     <div class="questao-container">
-        <p id="numero-questao">Questão 1 de 20</p>
+        <div class="questao-cabecalho">
+            <p id="numero-questao">Questão 1 de 20</p>
+            <span class="dica-resposta">Escolhe uma alternativa</span>
+        </div>
         <h2 id="texto-questao">Pergunta</h2>
         <div id="opcoes"></div>
         <button id="botao-proxima" onclick="proximaQuestao()">Próxima questão →</button>
@@ -114,6 +117,16 @@
     <div class="resultado-box">
         <div class="trofeu">🏆</div><h2>Simulado concluído!</h2>
         <p id="texto-resultado">Resultado</p><div id="percentagem">0%</div>
+        <div class="resultado-detalhes">
+            <div><strong id="resultado-acertos">0</strong><span>Acertos</span></div>
+            <div><strong id="resultado-erros">0</strong><span>Erros</span></div>
+            <div><strong id="resultado-total">0</strong><span>Total</span></div>
+        </div>
+        <div class="resultado-contexto">
+            <span>📚 <b>Disciplina:</b> <span id="resultado-disciplina">Geral</span></span>
+            <span>🏫 <b>Classe:</b> <span id="resultado-classe">Todas</span></span>
+            <span>🎯 <b>Nível:</b> <span id="resultado-nivel">Todos</span></span>
+        </div>
         <button onclick="voltarInicio()">Voltar ao início</button>
     </div>
 </section>
