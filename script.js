@@ -1825,20 +1825,2808 @@ const bancoQuestoesBloco1 = [
     explicacao: "A situação reúne precisamente os conceitos estudados no grupo 16: posição na tabela, seis electrões de valência e tendência para captar dois electrões."
   }
 
-];==============================
-   ESTUDA+ — ESTILO DO PASSO 3
-   ========================================================== */
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:#f5f7fb;color:#182230;line-height:1.55}
-button{font:inherit;cursor:pointer;border:0}
-.cabecalho{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:16px 7%;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e7eaf0}
-.logo{font-size:27px;font-weight:800;letter-spacing:-1px}.logo span{color:#2563eb}
-.cabecalho nav{display:flex;gap:22px}.cabecalho nav a{color:#475569;text-decoration:none;font-weight:600}.cabecalho nav a:hover{color:#2563eb}
-.hero{padding:100px 7%;background:linear-gradient(135deg,#eef5ff,#fff);min-height:470px;display:flex;align-items:center}.hero-conteudo{max-width:760px}.pequeno-titulo,.titulo-secao>p{font-size:13px;letter-spacing:1.4px;font-weight:800;color:#2563eb}.hero h1{font-size:clamp(42px,6vw,72px);line-height:1.02;margin:10px 0 20px;letter-spacing:-2px}.descricao{font-size:18px;color:#64748b;max-width:650px}.botoes{display:flex;gap:12px;margin-top:28px}.botoes button,.simulado-card button,.resultado-box>button{padding:13px 21px;border-radius:12px;background:#2563eb;color:white;font-weight:700}.botoes .botao-secundario{background:#0f172a}.secao{padding:70px 7%;max-width:1200px;margin:auto}.titulo-secao h2{font-size:34px;margin:4px 0 28px}.grade-disciplinas,.simulados-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.disciplina-card,.simulado-card{background:white;border:1px solid #e6eaf0;border-radius:18px;padding:24px;box-shadow:0 8px 25px rgba(15,23,42,.05);transition:.2s}.disciplina-card:hover,.simulado-card:hover{transform:translateY(-3px);box-shadow:0 14px 35px rgba(15,23,42,.09)}.icone-disciplina{font-size:36px}.disciplina-card h3,.simulado-card h3{margin:12px 0 8px}.disciplina-card p,.simulado-card p{color:#64748b}.disciplina-card span{color:#2563eb;font-weight:700}.classes{margin:28px 0 15px}.niveis{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0}.niveis button{padding:11px 16px;background:#fff;border:1px solid #d9dee8;border-radius:10px;font-weight:700;color:#334155}.niveis button:hover{border-color:#2563eb;color:#2563eb}.conteudo-disciplina{margin-top:24px;background:white;padding:22px;border-radius:16px;border:1px solid #e6eaf0}.area-escondida{display:none!important}.simulado-topo{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.voltar{background:#fff;border:1px solid #dce2eb;border-radius:10px;padding:10px 14px;font-weight:700;color:#475569}.voltar:hover{border-color:#2563eb;color:#2563eb}#cronometro{font-variant-numeric:tabular-nums;font-weight:800;background:#0f172a;color:#fff;border-radius:10px;padding:9px 15px}.progresso{height:8px;background:#e8edf5;border-radius:99px;overflow:hidden;margin-bottom:28px}.progresso div{height:100%;width:0;background:#2563eb;transition:width .25s}.questao-container{max-width:850px;margin:auto;background:#fff;border:1px solid #e4e8ef;border-radius:22px;padding:30px;box-shadow:0 15px 45px rgba(15,23,42,.07)}.questao-cabecalho{display:flex;justify-content:space-between;align-items:center;gap:15px}.questao-cabecalho p{font-weight:800;color:#2563eb}.dica-resposta{font-size:13px;color:#64748b;background:#f1f5f9;border-radius:99px;padding:6px 10px}.informacao-questao{display:flex;flex-wrap:wrap;gap:8px;margin:5px 0 16px}.informacao-questao span{font-size:13px;background:#f1f5f9;color:#475569;border-radius:99px;padding:6px 10px}.questao-container h2{font-size:26px;line-height:1.35;margin:10px 0 24px}.opcao{padding:16px 18px;margin:11px 0;border:2px solid #e5eaf1;border-radius:14px;background:#fff;transition:.18s;font-weight:600}.opcao:hover{border-color:#93b4ef;background:#f8fbff}.opcao.selecionada{border-color:#2563eb;background:#eff6ff}.opcao.correta{border-color:#16a34a;background:#f0fdf4}.opcao.incorreta{border-color:#dc2626;background:#fef2f2}.explicacao-questao{margin-top:18px;padding:17px;border-radius:14px;background:#f8fafc;border-left:4px solid #2563eb}.explicacao-questao p{margin:8px 0 0;color:#475569}.questao-container #botao-proxima{display:block;width:100%;margin-top:22px;padding:14px;border-radius:12px;background:#2563eb;color:#fff;font-weight:800}.questao-container #botao-proxima:disabled{opacity:.55;cursor:not-allowed}.resultado-box{text-align:center;max-width:700px;margin:auto;background:#fff;border:1px solid #e4e8ef;border-radius:22px;padding:40px;box-shadow:0 15px 45px rgba(15,23,42,.07)}.trofeu{font-size:55px}.resultado-box h2{font-size:32px}.resultado-box #percentagem{font-size:58px;font-weight:900;color:#2563eb;margin:12px 0 20px}.resultado-detalhes{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}.resultado-detalhes div{background:#f8fafc;border-radius:14px;padding:15px}.resultado-detalhes strong{display:block;font-size:25px}.resultado-detalhes span{font-size:13px;color:#64748b}.resultado-contexto{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:20px 0 28px}.resultado-contexto>span{background:#f1f5f9;padding:8px 11px;border-radius:10px;font-size:13px}.desempenho .estatisticas{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.estatisticas>div{background:#fff;border:1px solid #e6eaf0;border-radius:16px;padding:22px;text-align:center}.estatisticas strong{display:block;font-size:30px}.estatisticas span{color:#64748b}footer{padding:35px 7%;background:#0f172a;color:#cbd5e1;text-align:center}.simulados-grid .simulado-card>span{font-size:30px}
-@media(max-width:850px){.cabecalho{padding:14px 5%}.cabecalho nav{gap:10px;font-size:13px}.hero,.secao{padding-left:5%;padding-right:5%}.grade-disciplinas,.simulados-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.cabecalho{align-items:flex-start;gap:10px}.cabecalho nav{display:none}.hero{min-height:430px;padding-top:70px}.hero h1{font-size:43px}.botoes{flex-direction:column}.grade-disciplinas,.simulados-grid,.desempenho .estatisticas,.resultado-detalhes{grid-template-columns:1fr}.questao-container{padding:20px}.questao-cabecalho{align-items:flex-start;flex-direction:column}.questao-container h2{font-size:22px}.resultado-box{padding:28px 18px}}
-//
+];const bancoQuestoesBloco2_100_questoes = [
+  {
+    id: 101,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Introdução à Química",
+    tipo: "Conhecimento",
+    pergunta: "A Química é a ciência que estuda principalmente:",
+    opcoes: ["Apenas os seres vivos", "As substâncias, sua composição, estrutura e transformações", "Somente os astros", "Apenas os movimentos"],
+    resposta: 1,
+    explicacao: "O material apresenta a Química como ciência que estuda as substâncias, sua composição, estrutura e transformações."
+  },,
+
+
+  {
+    id: 102,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "História da Química",
+    tipo: "Conhecimento",
+    pergunta: "A Alquimia é apresentada no material como:",
+    opcoes: ["Antecessora da Química", "Uma tabela periódica", "Um método de filtração", "Uma teoria sobre gases"],
+    resposta: 0,
+    explicacao: "O material caracteriza a Alquimia como antecessora da Química."
+  },,
+
+
+  {
+    id: 103,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "História da Química",
+    tipo: "Conhecimento",
+    pergunta: "Lavoisier é destacado como:",
+    opcoes: ["Pai da Química moderna", "Descobridor dos electrões", "Criador da centrifugadora", "Inventor da tabela periódica moderna"],
+    resposta: 0,
+    explicacao: "O material chama Lavoisier de pai da Química moderna."
+  },,
+
+
+  {
+    id: 104,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Aplicações da Química",
+    tipo: "Aplicação",
+    pergunta: "Uma aplicação da Química na alimentação é:",
+    opcoes: ["Produção de fertilizantes e pesticidas", "Medição da distância entre estrelas", "Somente construção de pontes", "Apenas produção de papel"],
+    resposta: 0,
+    explicacao: "O material cita fertilizantes e pesticidas entre as aplicações da Química na alimentação/agricultura."
+  },,
+
+
+  {
+    id: 105,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Transformações",
+    tipo: "Conhecimento",
+    pergunta: "Rasgar uma folha de papel é exemplo de transformação:",
+    opcoes: ["Química", "Física", "Nuclear", "Iónica"],
+    resposta: 1,
+    explicacao: "Rasgar o papel altera sua forma sem formar uma nova substância, sendo transformação física."
+  },,
+
+
+  {
+    id: 106,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Transformações",
+    tipo: "Conhecimento",
+    pergunta: "A formação de uma nova substância caracteriza uma transformação:",
+    opcoes: ["Física", "Química", "Mecânica apenas", "Geométrica"],
+    resposta: 1,
+    explicacao: "Transformações químicas envolvem formação de novas substâncias com novas propriedades."
+  },,
+
+
+  {
+    id: 107,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Misturas",
+    tipo: "Conhecimento",
+    pergunta: "Uma mistura homogénea apresenta:",
+    opcoes: ["Uma única fase visível", "Sempre três fases", "Apenas sólidos", "Necessariamente duas camadas"],
+    resposta: 0,
+    explicacao: "Misturas homogéneas são apresentadas como aquelas com aspecto uniforme e uma fase visível."
+  },,
+
+
+  {
+    id: 108,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Misturas",
+    tipo: "Aplicação",
+    pergunta: "Uma mistura heterogénea caracteriza-se por:",
+    opcoes: ["Ser sempre gasosa", "Apresentar mais de uma fase", "Ter apenas uma substância pura", "Não poder ser separada"],
+    resposta: 1,
+    explicacao: "Misturas heterogéneas apresentam mais de uma fase."
+  },,
+
+
+  {
+    id: 109,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Misturas",
+    tipo: "Conhecimento",
+    pergunta: "Um coloide é estudado no material como:",
+    opcoes: ["Um tipo de mistura", "Um elemento químico", "Um ião positivo", "Uma equação"],
+    resposta: 0,
+    explicacao: "O programa inclui os coloides entre as classificações das misturas."
+  },,
+
+
+  {
+    id: 110,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Separação de misturas",
+    tipo: "Conhecimento",
+    pergunta: "Para separar um líquido de um sólido depositado no fundo, usa-se:",
+    opcoes: ["Decantação", "Peneiração", "Separação magnética", "Cristalização"],
+    resposta: 0,
+    explicacao: "A decantação é indicada para separar líquido de sólido que está em depósito ou repouso."
+  },,
+
+
+  {
+    id: 111,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Separação de misturas",
+    tipo: "Conhecimento",
+    pergunta: "A filtração é usada para separar:",
+    opcoes: ["Um líquido de um sólido em suspensão", "Dois gases", "Dois metais dissolvidos", "Dois líquidos miscíveis"],
+    resposta: 0,
+    explicacao: "O material indica filtração para separar líquido de sólido em suspensão."
+  },,
+
+
+  {
+    id: 112,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Separação de misturas",
+    tipo: "Aplicação",
+    pergunta: "A centrifugação pode ser entendida como uma forma de:",
+    opcoes: ["Acelerar a decantação", "Produzir uma molécula", "Aumentar a massa atómica", "Transformar um metal em gás"],
+    resposta: 0,
+    explicacao: "O material descreve a centrifugação como forma de acelerar a decantação."
+  },,
+
+
+  {
+    id: 113,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Separação de misturas",
+    tipo: "Conhecimento",
+    pergunta: "Na cristalização, procura-se obter:",
+    opcoes: ["Cristais de uma substância sólida que estava em solução", "Um gás puro", "Um metal por imantação", "Uma mistura heterogénea nova"],
+    resposta: 0,
+    explicacao: "A cristalização separa uma substância sólida em solução, deixando cristais após evaporação do líquido."
+  },,
+
+
+  {
+    id: 114,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Separação de misturas",
+    tipo: "Conhecimento",
+    pergunta: "A destilação baseia-se na combinação de:",
+    opcoes: ["Evaporação e condensação", "Filtração e peneiração", "Magnetismo e decantação", "Centrifugação e fusão"],
+    resposta: 0,
+    explicacao: "O material explica que a destilação se baseia em evaporação e condensação."
+  },,
+
+
+  {
+    id: 115,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Separação de misturas",
+    tipo: "Conhecimento",
+    pergunta: "Para separar componentes de uma mistura sólida por tamanho das partículas, pode-se usar:",
+    opcoes: ["Peneiração", "Decantação", "Destilação", "Filtração"],
+    resposta: 0,
+    explicacao: "A peneiração é indicada entre os métodos de separação de misturas sólidas."
+  },,
+
+
+  {
+    id: 116,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Separação de misturas",
+    tipo: "Aplicação",
+    pergunta: "A separação magnética é apropriada para separar:",
+    opcoes: ["Limalha de ferro de fragmentos de vidro", "Água e sal dissolvido", "Água e álcool", "Açúcar dissolvido em água"],
+    resposta: 0,
+    explicacao: "O material dá como exemplo a separação de limalha de ferro de pequenos fragmentos de vidro."
+  },,
+
+
+  {
+    id: 117,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Propriedades da matéria",
+    tipo: "Conhecimento",
+    pergunta: "O ponto de fusão é uma:",
+    opcoes: ["Propriedade específica", "Mistura", "Equação química", "Partícula subatómica"],
+    resposta: 0,
+    explicacao: "O ponto de fusão aparece entre as propriedades usadas para identificar substâncias."
+  },,
+
+
+  {
+    id: 118,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Propriedades da matéria",
+    tipo: "Conhecimento",
+    pergunta: "O ponto de ebulição pode ajudar a:",
+    opcoes: ["Identificar uma substância", "Criar um elemento", "Contar electrões diretamente", "Separar sólidos por magnetismo"],
+    resposta: 0,
+    explicacao: "O material inclui o ponto de ebulição entre propriedades específicas de identificação."
+  },,
+
+
+  {
+    id: 119,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Densidade",
+    tipo: "Conhecimento",
+    pergunta: "A densidade ou massa volúmica relaciona:",
+    opcoes: ["Massa e volume", "Pressão e carga", "Número atómico e período", "Temperatura e electrões"],
+    resposta: 0,
+    explicacao: "Densidade é relacionada à massa e ao volume."
+  },,
+
+
+  {
+    id: 120,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Densidade",
+    tipo: "Aplicação",
+    pergunta: "A expressão da densidade é:",
+    opcoes: ["d = m/V", "d = V/m²", "d = m+V", "d = V-m"],
+    resposta: 0,
+    explicacao: "A relação apresentada no material é d = m/V."
+  },,
+
+
+  {
+    id: 121,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Densidade",
+    tipo: "Conhecimento",
+    pergunta: "Um corpo tem massa 200 g e volume 50 cm³. A densidade é:",
+    opcoes: ["2 g/cm³", "4 g/cm³", "10 g/cm³", "250 g/cm³"],
+    resposta: 1,
+    explicacao: "d = m/V = 200/50 = 4 g/cm³."
+  },,
+
+
+  {
+    id: 122,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Densidade",
+    tipo: "Conhecimento",
+    pergunta: "Se a massa de uma amostra permanece 100 g e o volume passa de 20 para 40 cm³, sua densidade:",
+    opcoes: ["Aumenta para o dobro", "Diminui para metade", "Fica quatro vezes maior", "Fica igual a zero"],
+    resposta: 1,
+    explicacao: "Com massa constante, d=m/V; dobrando o volume, a densidade fica pela metade."
+  },,
+
+
+  {
+    id: 123,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Constituição da matéria",
+    tipo: "Conhecimento",
+    pergunta: "A natureza corpuscular da matéria considera que a matéria é constituída por:",
+    opcoes: ["Partículas muito pequenas", "Apenas água", "Somente células", "Ondas luminosas"],
+    resposta: 0,
+    explicacao: "O material aborda a constituição corpuscular da matéria."
+  },,
+
+
+  {
+    id: 124,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Estados físicos",
+    tipo: "Aplicação",
+    pergunta: "No estado sólido, as partículas estão, em geral:",
+    opcoes: ["Mais próximas e organizadas", "Muito afastadas como num gás", "Ausentes", "Transformadas em iões sempre"],
+    resposta: 0,
+    explicacao: "O estudo dos estados físicos relaciona-se à disposição e movimento das partículas."
+  },,
+
+
+  {
+    id: 125,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Estados físicos",
+    tipo: "Conhecimento",
+    pergunta: "No estado líquido, a matéria possui:",
+    opcoes: ["Volume definido e forma do recipiente", "Forma e volume sempre indefinidos", "Apenas partículas imóveis", "Nenhuma partícula"],
+    resposta: 0,
+    explicacao: "No nível introdutório, líquidos mantêm volume definido e assumem a forma do recipiente."
+  },,
+
+
+  {
+    id: 126,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Estados físicos",
+    tipo: "Conhecimento",
+    pergunta: "No estado gasoso, as partículas encontram-se:",
+    opcoes: ["Mais afastadas e com maior liberdade de movimento", "Presas numa rede rígida", "Sem movimento", "Sempre ionizadas"],
+    resposta: 0,
+    explicacao: "O material relaciona o estado gasoso com movimento corpuscular e maior afastamento das partículas."
+  },,
+
+
+  {
+    id: 127,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Gases",
+    tipo: "Conhecimento",
+    pergunta: "A pressão de um gás está relacionada com:",
+    opcoes: ["O movimento das suas partículas e colisões", "A cor do recipiente apenas", "A massa do recipiente", "O número de fases de um sólido"],
+    resposta: 0,
+    explicacao: "A pressão dos gases é tratada no material a partir do movimento corpuscular."
+  },,
+
+
+  {
+    id: 128,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Gases",
+    tipo: "Aplicação",
+    pergunta: "Ao comprimir um gás mantendo a quantidade de matéria, o volume tende a:",
+    opcoes: ["Diminuir", "Aumentar sempre", "Ficar infinito", "Desaparecer a matéria"],
+    resposta: 0,
+    explicacao: "A relação entre pressão e volume dos gases é estudada no tema da constituição da matéria."
+  },,
+
+
+  {
+    id: 129,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Átomos",
+    tipo: "Conhecimento",
+    pergunta: "Um átomo é:",
+    opcoes: ["Uma unidade estrutural da matéria", "Uma mistura homogénea", "Uma fase líquida", "Um método de separação"],
+    resposta: 0,
+    explicacao: "Átomos aparecem no material como unidades estruturais da matéria."
+  },,
+
+
+  {
+    id: 130,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Moléculas",
+    tipo: "Conhecimento",
+    pergunta: "Uma molécula é:",
+    opcoes: ["Uma associação de átomos", "Um tipo de mistura", "Um método de filtração", "Um recipiente"],
+    resposta: 0,
+    explicacao: "O material define molécula como conjunto ou associação de átomos que constitui substâncias."
+  },,
+
+
+  {
+    id: 131,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Elementos químicos",
+    tipo: "Conhecimento",
+    pergunta: "Um elemento químico é representado convencionalmente por:",
+    opcoes: ["Um símbolo químico", "Uma técnica de separação", "Um ponto de fusão", "Uma densidade"],
+    resposta: 0,
+    explicacao: "O programa inclui elemento químico e símbolo químico como conceitos fundamentais."
+  },,
+
+
+  {
+    id: 132,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Fórmulas químicas",
+    tipo: "Aplicação",
+    pergunta: "A fórmula química serve para representar:",
+    opcoes: ["A constituição de uma substância", "A temperatura do laboratório", "O volume do recipiente", "A velocidade da reacção apenas"],
+    resposta: 0,
+    explicacao: "As fórmulas químicas representam a constituição das substâncias por símbolos e índices."
+  },,
+
+
+  {
+    id: 133,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Metais e não-metais",
+    tipo: "Conhecimento",
+    pergunta: "Os metais e não-metais são:",
+    opcoes: ["Classificações de elementos químicos", "Tipos de misturas", "Estados físicos", "Métodos de separação"],
+    resposta: 0,
+    explicacao: "O programa inclui a distinção entre metais e não-metais."
+  },,
+
+
+  {
+    id: 134,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Iões",
+    tipo: "Conhecimento",
+    pergunta: "Um ião positivo é chamado de:",
+    opcoes: ["Catião", "Anião", "Molécula", "Isótopo"],
+    resposta: 0,
+    explicacao: "Iões positivos são catiões; iões negativos são aniões."
+  },,
+
+
+  {
+    id: 135,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Iões",
+    tipo: "Conhecimento",
+    pergunta: "Um ião negativo é chamado de:",
+    opcoes: ["Catião", "Anião", "Protão", "Neutrão"],
+    resposta: 1,
+    explicacao: "Iões negativos são aniões."
+  },,
+
+
+  {
+    id: 136,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Iões",
+    tipo: "Aplicação",
+    pergunta: "A formação de iões envolve principalmente:",
+    opcoes: ["Ganho ou perda de electrões", "Ganho de protões sempre", "Mudança do núcleo em todos os casos", "Mudança de massa do recipiente"],
+    resposta: 0,
+    explicacao: "Iões formam-se por ganho ou perda de electrões, conforme o conteúdo introdutório."
+  },,
+
+
+  {
+    id: 137,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Transformações químicas",
+    tipo: "Conhecimento",
+    pergunta: "Uma transformação provocada pela acção do calor pode ser:",
+    opcoes: ["Uma transformação de substância estudada em Química", "Necessariamente uma separação magnética", "Sempre uma mistura", "Nunca uma transformação"],
+    resposta: 0,
+    explicacao: "O material estuda transformações por acção do calor."
+  },,
+
+
+  {
+    id: 138,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Transformações químicas",
+    tipo: "Conhecimento",
+    pergunta: "A electricidade pode provocar:",
+    opcoes: ["Transformações de substâncias", "Apenas decantação", "Apenas peneiração", "Somente mudança de cor física"],
+    resposta: 0,
+    explicacao: "O material inclui a electricidade entre as formas de provocar transformações."
+  },,
+
+
+  {
+    id: 139,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Transformações químicas",
+    tipo: "Conhecimento",
+    pergunta: "A luz pode participar na transformação de:",
+    opcoes: ["Substâncias", "Somente metais", "Apenas gases nobres", "Somente misturas homogéneas"],
+    resposta: 0,
+    explicacao: "Transformações por acção da luz fazem parte do programa."
+  },,
+
+
+  {
+    id: 140,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Transformações químicas",
+    tipo: "Aplicação",
+    pergunta: "A junção de substâncias pode provocar:",
+    opcoes: ["Uma transformação química", "Somente mudança de recipiente", "Necessariamente filtração", "Apenas centrifugação"],
+    resposta: 0,
+    explicacao: "O programa inclui transformações por junção de substâncias."
+  },,
+
+
+  {
+    id: 141,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Reacções químicas",
+    tipo: "Conhecimento",
+    pergunta: "Numa reacção química, os átomos:",
+    opcoes: ["São conservados, embora possam reorganizar-se", "São destruídos completamente", "Transformam-se todos em energia", "Desaparecem"],
+    resposta: 0,
+    explicacao: "O tema inclui a conservação dos átomos nas reacções químicas."
+  },,
+
+
+  {
+    id: 142,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Equações químicas",
+    tipo: "Conhecimento",
+    pergunta: "Uma equação química representa:",
+    opcoes: ["Simbolicamente uma reacção química", "Somente uma mistura", "Apenas a densidade", "Um ponto de ebulição"],
+    resposta: 0,
+    explicacao: "O material define equação química como representação convencional das reacções por fórmulas e símbolos."
+  },,
+
+
+  {
+    id: 143,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Equações químicas",
+    tipo: "Conhecimento",
+    pergunta: "Numa equação química, os reagentes ficam:",
+    opcoes: ["À esquerda da seta", "À direita da seta", "Acima da seta apenas", "Dentro do índice"],
+    resposta: 0,
+    explicacao: "Pelas regras apresentadas, os reagentes ficam à esquerda e os produtos à direita."
+  },,
+
+
+  {
+    id: 144,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Equações químicas",
+    tipo: "Aplicação",
+    pergunta: "Numa equação química, os produtos ficam:",
+    opcoes: ["À esquerda", "À direita da seta", "Sempre acima da seta", "Fora da equação"],
+    resposta: 1,
+    explicacao: "Os produtos são escritos à direita da seta."
+  },,
+
+
+  {
+    id: 145,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Equações químicas",
+    tipo: "Conhecimento",
+    pergunta: "O estado sólido numa equação é indicado por:",
+    opcoes: ["(s)", "(l)", "(g)", "(aq)"],
+    resposta: 0,
+    explicacao: "O material usa (s) para sólido."
+  },,
+
+
+  {
+    id: 146,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Equações químicas",
+    tipo: "Conhecimento",
+    pergunta: "O estado líquido numa equação é indicado por:",
+    opcoes: ["(s)", "(l)", "(g)", "(aq)"],
+    resposta: 1,
+    explicacao: "O material usa (l) para líquido."
+  },,
+
+
+  {
+    id: 147,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Equações químicas",
+    tipo: "Conhecimento",
+    pergunta: "O estado gasoso numa equação é indicado por:",
+    opcoes: ["(s)", "(l)", "(g)", "(aq)"],
+    resposta: 2,
+    explicacao: "O material usa (g) para gasoso."
+  },,
+
+
+  {
+    id: 148,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Equações químicas",
+    tipo: "Aplicação",
+    pergunta: "Uma substância em solução aquosa pode ser indicada por:",
+    opcoes: ["(aq)", "(s)", "(l)", "(g)"],
+    resposta: 0,
+    explicacao: "O material indica (aq) para substâncias em solução aquosa."
+  },,
+
+
+  {
+    id: 149,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Lei de Lavoisier",
+    tipo: "Conhecimento",
+    pergunta: "A lei de Lavoisier afirma que, numa reacção química:",
+    opcoes: ["A massa total dos reagentes é igual à dos produtos", "A massa dos produtos é sempre maior", "A massa dos reagentes desaparece", "O volume é sempre igual à massa"],
+    resposta: 0,
+    explicacao: "O material apresenta a conservação da massa: massa dos reagentes igual à massa dos produtos."
+  },,
+
+
+  {
+    id: 150,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Lei de Lavoisier",
+    tipo: "Conhecimento",
+    pergunta: "Se 10 g de reagentes originam produtos numa reacção fechada, a massa total dos produtos será:",
+    opcoes: ["5 g", "10 g", "20 g", "100 g"],
+    resposta: 1,
+    explicacao: "Pela conservação da massa, a massa total dos produtos deve ser 10 g."
+  },,
+
+
+  {
+    id: 151,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Identificação de substâncias",
+    tipo: "Conhecimento",
+    pergunta: "Uma propriedade comum como cor, por si só, pode ser insuficiente para identificar uma substância porque:",
+    opcoes: ["Substâncias diferentes podem ter a mesma cor", "Toda substância tem cor única", "A cor é sempre uma propriedade química", "A cor mede a massa"],
+    resposta: 0,
+    explicacao: "O material alerta que propriedades comuns como cor e forma podem ocorrer em várias substâncias."
+  },,
+
+
+  {
+    id: 152,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Substâncias e misturas",
+    tipo: "Aplicação",
+    pergunta: "Uma substância pura difere de uma mistura porque:",
+    opcoes: ["A substância pura tem composição própria definida", "A mistura nunca pode ser separada", "A substância pura possui sempre duas fases", "A mistura é sempre sólida"],
+    resposta: 0,
+    explicacao: "O estudo distingue substâncias de misturas e aborda métodos para separar componentes de misturas."
+  },,
+
+
+  {
+    id: 153,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Separação de misturas",
+    tipo: "Conhecimento",
+    pergunta: "Para obter sal sólido a partir de água salgada por cristalização, deve-se:",
+    opcoes: ["Evaporar o líquido até formação de cristais", "Usar um íman", "Peneirar a água", "Centrifugar o sal"],
+    resposta: 0,
+    explicacao: "A cristalização permite obter a substância sólida dissolvida após evaporação do líquido."
+  },,
+
+
+  {
+    id: 154,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Separação de misturas",
+    tipo: "Conhecimento",
+    pergunta: "Para clarificar uma água turva contendo partículas sólidas em suspensão, um método indicado é:",
+    opcoes: ["Filtração", "Separação magnética obrigatoriamente", "Peneiração do líquido", "Destilação sempre"],
+    resposta: 0,
+    explicacao: "O material propõe a filtração para separar líquido de sólido em suspensão."
+  },,
+
+
+  {
+    id: 155,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Separação de misturas",
+    tipo: "Conhecimento",
+    pergunta: "Se há água e um sólido depositado no fundo, antes de outras etapas pode-se usar:",
+    opcoes: ["Decantação", "Peneiração", "Separação magnética sempre", "Fusão"],
+    resposta: 0,
+    explicacao: "A decantação é indicada para líquido e sólido depositado."
+  },,
+
+
+  {
+    id: 156,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Separação de misturas",
+    tipo: "Aplicação",
+    pergunta: "A centrifugadora é um aparelho associado à:",
+    opcoes: ["Centrifugação", "Destilação", "Peneiração", "Cristalização"],
+    resposta: 0,
+    explicacao: "O material descreve a centrifugação como realizada numa centrifugadora."
+  },,
+
+
+  {
+    id: 157,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Separação de misturas",
+    tipo: "Conhecimento",
+    pergunta: "A destilação é especialmente baseada numa diferença de:",
+    opcoes: ["Comportamento de evaporação e condensação dos componentes", "Cor", "Magnetismo", "Tamanho das partículas sólidas"],
+    resposta: 0,
+    explicacao: "A destilação envolve evaporação e condensação, permitindo separar componentes conforme seu comportamento físico."
+  },,
+
+
+  {
+    id: 158,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Estados físicos",
+    tipo: "Conhecimento",
+    pergunta: "A mudança de sólido para líquido chama-se:",
+    opcoes: ["Fusão", "Condensação", "Solidificação", "Sublimação"],
+    resposta: 0,
+    explicacao: "Fusão é a passagem do estado sólido para o líquido."
+  },,
+
+
+  {
+    id: 159,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Estados físicos",
+    tipo: "Conhecimento",
+    pergunta: "A mudança de líquido para sólido chama-se:",
+    opcoes: ["Fusão", "Solidificação", "Ebulição", "Sublimação"],
+    resposta: 1,
+    explicacao: "Solidificação é a passagem do líquido ao sólido."
+  },,
+
+
+  {
+    id: 160,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Estados físicos",
+    tipo: "Aplicação",
+    pergunta: "A mudança de líquido para gás chama-se:",
+    opcoes: ["Vaporização", "Fusão", "Solidificação", "Condensação"],
+    resposta: 0,
+    explicacao: "Vaporização é a passagem do líquido para o estado gasoso."
+  },,
+
+
+  {
+    id: 161,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Estados físicos",
+    tipo: "Conhecimento",
+    pergunta: "A mudança de gás para líquido chama-se:",
+    opcoes: ["Condensação", "Fusão", "Sublimação", "Solidificação"],
+    resposta: 0,
+    explicacao: "Condensação é a passagem do gasoso para o líquido."
+  },,
+
+
+  {
+    id: 162,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Estados físicos",
+    tipo: "Conhecimento",
+    pergunta: "A passagem directa de sólido para gás chama-se:",
+    opcoes: ["Sublimação", "Fusão", "Condensação", "Decantação"],
+    resposta: 0,
+    explicacao: "Sublimação é a passagem directa do sólido ao gasoso."
+  },,
+
+
+  {
+    id: 163,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Densidade",
+    tipo: "Conhecimento",
+    pergunta: "Se uma amostra tem 60 g e densidade 3 g/cm³, seu volume é:",
+    opcoes: ["20 cm³", "63 cm³", "180 cm³", "0,05 cm³"],
+    resposta: 0,
+    explicacao: "V = m/d = 60/3 = 20 cm³."
+  },,
+
+
+  {
+    id: 164,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Densidade",
+    tipo: "Aplicação",
+    pergunta: "Se uma amostra tem volume 25 cm³ e densidade 2 g/cm³, sua massa é:",
+    opcoes: ["12,5 g", "27 g", "50 g", "75 g"],
+    resposta: 2,
+    explicacao: "m = d×V = 2×25 = 50 g."
+  },,
+
+
+  {
+    id: 165,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Separação de misturas",
+    tipo: "Conhecimento",
+    pergunta: "Qual sequência contém apenas métodos de separação citados no material?",
+    opcoes: ["Filtração, decantação e destilação", "Combustão, oxidação e redução", "Ionização, dissociação e neutralização", "Fusão, combustão e corrosão"],
+    resposta: 0,
+    explicacao: "Os três métodos da primeira opção aparecem no conteúdo de separação de misturas."
+  },,
+
+
+  {
+    id: 166,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "Transformações",
+    tipo: "Conhecimento",
+    pergunta: "Qual situação representa transformação física?",
+    opcoes: ["Gelo a derreter", "Papel a queimar", "Ferro a enferrujar", "Substâncias reagindo e formando produto"],
+    resposta: 0,
+    explicacao: "Derreter gelo muda o estado físico sem formação de nova substância."
+  },,
+
+
+  {
+    id: 167,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Avançado",
+    tema: "Transformações",
+    tipo: "Conhecimento",
+    pergunta: "Qual situação representa transformação química?",
+    opcoes: ["Queima de uma substância formando novas substâncias", "Cortar papel", "Derreter gelo", "Evaporar água"],
+    resposta: 0,
+    explicacao: "A queima com formação de novas substâncias é uma transformação química."
+  },,
+
+
+  {
+    id: 168,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Básico",
+    tema: "Equações químicas",
+    tipo: "Aplicação",
+    pergunta: "Se uma equação não conserva o número de átomos de cada elemento, deve-se:",
+    opcoes: ["Acertar/balancear a equação com base na conservação da massa", "Apagar os reagentes", "Trocar todos os elementos", "Ignorar a lei de Lavoisier"],
+    resposta: 0,
+    explicacao: "O material estabelece que a equação deve ser acertada com base na conservação da massa."
+  },,
+
+
+  {
+    id: 169,
+    disciplina: "Química",
+    classe: "7ª",
+    nivel: "Médio",
+    tema: "O programa da 7ª classe inclui átomos e moléculas como unidades estruturais da matéria.",
+    tipo: "Conhecimento",
+    pergunta: "Qual alternativa reúne unidades estruturais mencionadas no programa?",
+    opcoes: ["Átomos e moléculas", "Litros e metros", "Graus e segundos", "Newtons e joules"],
+    resposta: 0,
+    explicacao: "O programa da 7ª classe inclui átomos e moléculas como unidades estruturais da matéria."
+  },,
+
+
+  {
+    id: 170,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Avançado",
+    tema: "Átomos",
+    tipo: "Conhecimento",
+    pergunta: "Segundo o material, o átomo é:",
+    opcoes: ["Uma partícula muitíssimo pequena que constitui a matéria", "Uma mistura", "Uma molécula sempre", "Um método de separação"],
+    resposta: 0,
+    explicacao: "O material apresenta o átomo como partícula muitíssimo pequena constituinte da matéria."
+  },,
+
+
+  {
+    id: 171,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Universitário",
+    tema: "Átomos",
+    tipo: "Aplicação",
+    pergunta: "A palavra átomo tem origem grega relacionada a:",
+    opcoes: ["Não divisível/cortável", "Muito pesado", "Muito quente", "Misturado"],
+    resposta: 0,
+    explicacao: "O material relaciona a palavra átomo às ideias gregas de não corte ou divisão."
+  },,
+
+
+  {
+    id: 172,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Básico",
+    tema: "Átomos",
+    tipo: "Conhecimento",
+    pergunta: "Dalton desenvolveu trabalhos sobre:",
+    opcoes: ["Constituição da matéria e teoria atómica", "Separação magnética", "Grupo 16", "Petróleo"],
+    resposta: 0,
+    explicacao: "O material apresenta os postulados de Dalton no tema dos átomos."
+  },,
+
+
+  {
+    id: 173,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Médio",
+    tema: "Partículas subatómicas",
+    tipo: "Conhecimento",
+    pergunta: "As partículas subatómicas estudadas incluem:",
+    opcoes: ["Protões, neutrões e electrões", "Moléculas, misturas e iões", "Metais, gases e líquidos", "Ácidos, bases e sais"],
+    resposta: 0,
+    explicacao: "A constituição do átomo é estudada por meio das partículas subatómicas."
+  },,
+
+
+  {
+    id: 174,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Avançado",
+    tema: "Partículas subatómicas",
+    tipo: "Aplicação",
+    pergunta: "O protão possui carga:",
+    opcoes: ["Positiva", "Negativa", "Nula", "Variável conforme o período"],
+    resposta: 0,
+    explicacao: "Protões são partículas subatómicas de carga positiva."
+  },,
+
+
+  {
+    id: 175,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Universitário",
+    tema: "Partículas subatómicas",
+    tipo: "Conhecimento",
+    pergunta: "O electrão possui carga:",
+    opcoes: ["Negativa", "Positiva", "Nula", "Sempre dupla"],
+    resposta: 0,
+    explicacao: "Electrões possuem carga negativa."
+  },,
+
+
+  {
+    id: 176,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Básico",
+    tema: "Partículas subatómicas",
+    tipo: "Conhecimento",
+    pergunta: "O neutrão possui carga eléctrica:",
+    opcoes: ["Nula", "Positiva", "Negativa", "Dupla"],
+    resposta: 0,
+    explicacao: "Neutrões são eletricamente neutros."
+  },,
+
+
+  {
+    id: 177,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Médio",
+    tema: "Número atómico",
+    tipo: "Aplicação",
+    pergunta: "O número atómico corresponde ao número de:",
+    opcoes: ["Protões do núcleo", "Neutrões apenas", "Moléculas", "Camadas sempre"],
+    resposta: 0,
+    explicacao: "O número atómico identifica-se pelo número de protões."
+  },,
+
+
+  {
+    id: 178,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Avançado",
+    tema: "Estrutura atómica",
+    tipo: "Conhecimento",
+    pergunta: "Num átomo neutro, o número de electrões é igual ao número de:",
+    opcoes: ["Protões", "Neutrões", "Isótopos", "Períodos"],
+    resposta: 0,
+    explicacao: "Num átomo neutro, as cargas positiva e negativa se compensam, tornando os números de protões e electrões iguais."
+  },,
+
+
+  {
+    id: 179,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Universitário",
+    tema: "Número de massa",
+    tipo: "Conhecimento",
+    pergunta: "O número de massa é obtido pela soma de:",
+    opcoes: ["Protões e neutrões", "Protões e electrões", "Electrões e moléculas", "Iões e períodos"],
+    resposta: 0,
+    explicacao: "Número de massa = protões + neutrões."
+  },,
+
+
+  {
+    id: 180,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Básico",
+    tema: "Isótopos",
+    tipo: "Aplicação",
+    pergunta: "Isótopos são átomos do mesmo elemento com:",
+    opcoes: ["Mesmo número atómico e diferente número de massa", "Mesmo número de massa e elementos diferentes sempre", "Mesmo número de electrões e elementos diferentes", "Mesmo período obrigatoriamente"],
+    resposta: 0,
+    explicacao: "Isótopos possuem o mesmo número atómico, mas diferentes números de massa."
+  },,
+
+
+  {
+    id: 181,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Médio",
+    tema: "Isóbaros",
+    tipo: "Conhecimento",
+    pergunta: "Isóbaros são átomos que possuem:",
+    opcoes: ["Mesmo número de massa e diferentes números atómicos", "Mesmo número atómico e diferente massa", "Mesmo número de electrões apenas", "Mesmo número de valência sempre"],
+    resposta: 0,
+    explicacao: "Isóbaros apresentam o mesmo número de massa e números atómicos diferentes."
+  },,
+
+
+  {
+    id: 182,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Avançado",
+    tema: "Electrões",
+    tipo: "Conhecimento",
+    pergunta: "A organização dos electrões no átomo é estudada para compreender:",
+    opcoes: ["A configuração electrónica", "A filtração", "A densidade", "A destilação"],
+    resposta: 0,
+    explicacao: "O programa inclui a organização dos electrões e configuração electrónica."
+  },,
+
+
+  {
+    id: 183,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Universitário",
+    tema: "Raio atómico",
+    tipo: "Aplicação",
+    pergunta: "O raio atómico refere-se ao:",
+    opcoes: ["Tamanho do átomo", "Número de protões", "Número de massa", "Número de grupos"],
+    resposta: 0,
+    explicacao: "O programa aborda a periodicidade do tamanho dos átomos e o raio atómico."
+  },,
+
+
+  {
+    id: 184,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Básico",
+    tema: "Raio atómico e iónico",
+    tipo: "Conhecimento",
+    pergunta: "O raio iónico refere-se ao tamanho de:",
+    opcoes: ["Um ião", "Uma mistura", "Um grupo", "Uma molécula apenas"],
+    resposta: 0,
+    explicacao: "O programa distingue raio atómico e raio iónico."
+  },,
+
+
+  {
+    id: 185,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Médio",
+    tema: "Massa atómica relativa",
+    tipo: "Conhecimento",
+    pergunta: "A massa atómica relativa é estudada no tema:",
+    opcoes: ["Os átomos", "Separação de misturas", "Grupo 16 apenas", "Petróleo"],
+    resposta: 0,
+    explicacao: "A massa atómica relativa faz parte do Tema 1 da 8ª classe."
+  },,
+
+
+  {
+    id: 186,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Avançado",
+    tema: "História da tabela periódica",
+    tipo: "Aplicação",
+    pergunta: "Döbereiner é associado à:",
+    opcoes: ["Lei das tríades", "Lei das oitavas", "Lei de Lavoisier", "Lei dos gases"],
+    resposta: 0,
+    explicacao: "O material apresenta as tríades de Döbereiner."
+  },,
+
+
+  {
+    id: 187,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Universitário",
+    tema: "História da tabela periódica",
+    tipo: "Conhecimento",
+    pergunta: "Newlands é associado à:",
+    opcoes: ["Lei das oitavas", "Lei das tríades", "Lei de conservação da massa", "Teoria do mol"],
+    resposta: 0,
+    explicacao: "Newlands organizou elementos e observou repetição das propriedades no oitavo elemento."
+  },,
+
+
+  {
+    id: 188,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Básico",
+    tema: "Tabela periódica",
+    tipo: "Conhecimento",
+    pergunta: "Mendeleyev é considerado no material:",
+    opcoes: ["Pai da tabela periódica", "Pai da Química orgânica", "Descobridor do electrão", "Criador da centrifugação"],
+    resposta: 0,
+    explicacao: "O material atribui a Mendeleyev um contributo fundamental para a organização da tabela periódica."
+  },,
+
+
+  {
+    id: 189,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Médio",
+    tema: "Tabela periódica",
+    tipo: "Aplicação",
+    pergunta: "A tabela periódica actual organiza os elementos por ordem crescente de:",
+    opcoes: ["Número atómico", "Massa do recipiente", "Volume", "Ponto de ebulição"],
+    resposta: 0,
+    explicacao: "O material afirma que os elementos actuais são organizados por número atómico crescente."
+  },,
+
+
+  {
+    id: 190,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Avançado",
+    tema: "Tabela periódica",
+    tipo: "Conhecimento",
+    pergunta: "A tabela periódica possui:",
+    opcoes: ["18 grupos e 7 períodos", "7 grupos e 18 períodos", "16 grupos e 8 períodos", "10 grupos e 10 períodos"],
+    resposta: 0,
+    explicacao: "O material apresenta 18 colunas/grupos e 7 linhas/períodos."
+  },,
+
+
+  {
+    id: 191,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Universitário",
+    tema: "Tabela periódica",
+    tipo: "Conhecimento",
+    pergunta: "As colunas verticais da tabela são chamadas:",
+    opcoes: ["Grupos ou famílias", "Períodos ou séries", "Isótopos", "Camadas"],
+    resposta: 0,
+    explicacao: "As colunas verticais são grupos ou famílias."
+  },,
+
+
+  {
+    id: 192,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Básico",
+    tema: "Tabela periódica",
+    tipo: "Aplicação",
+    pergunta: "As linhas horizontais da tabela são chamadas:",
+    opcoes: ["Períodos ou séries", "Grupos", "Iões", "Tríades"],
+    resposta: 0,
+    explicacao: "As linhas horizontais são períodos ou séries."
+  },,
+
+
+  {
+    id: 193,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Médio",
+    tema: "Periodicidade",
+    tipo: "Conhecimento",
+    pergunta: "Elementos do mesmo grupo apresentam, em geral:",
+    opcoes: ["Propriedades semelhantes e mesmo número de electrões de valência", "Sempre a mesma massa", "Sempre o mesmo número de protões", "A mesma densidade"],
+    resposta: 0,
+    explicacao: "O material relaciona grupo com propriedades semelhantes e número de electrões de valência."
+  },,
+
+
+  {
+    id: 194,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Avançado",
+    tema: "Periodicidade",
+    tipo: "Conhecimento",
+    pergunta: "Elementos do mesmo período possuem:",
+    opcoes: ["O mesmo número de camadas electrónicas", "O mesmo número de protões", "A mesma massa atómica", "A mesma configuração completa"],
+    resposta: 0,
+    explicacao: "No ensino da tabela periódica, o período está relacionado com o número de camadas electrónicas."
+  },,
+
+
+  {
+    id: 195,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Universitário",
+    tema: "Famílias periódicas",
+    tipo: "Aplicação",
+    pergunta: "Os metais alcalinos pertencem ao:",
+    opcoes: ["Grupo 1", "Grupo 2", "Grupo 17", "Grupo 18"],
+    resposta: 0,
+    explicacao: "O material identifica o grupo 1 como metais alcalinos."
+  },,
+
+
+  {
+    id: 196,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Básico",
+    tema: "Famílias periódicas",
+    tipo: "Conhecimento",
+    pergunta: "Os metais alcalino-terrosos pertencem ao:",
+    opcoes: ["Grupo 2", "Grupo 1", "Grupo 16", "Grupo 18"],
+    resposta: 0,
+    explicacao: "O material identifica o grupo 2 como metais alcalino-terrosos."
+  },,
+
+
+  {
+    id: 197,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Médio",
+    tema: "Famílias periódicas",
+    tipo: "Conhecimento",
+    pergunta: "Os halogéneos pertencem ao:",
+    opcoes: ["Grupo 17", "Grupo 1", "Grupo 2", "Grupo 18"],
+    resposta: 0,
+    explicacao: "O material identifica o grupo 17 como halogéneos."
+  },,
+
+
+  {
+    id: 198,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Avançado",
+    tema: "Famílias periódicas",
+    tipo: "Aplicação",
+    pergunta: "Os gases nobres pertencem ao:",
+    opcoes: ["Grupo 18", "Grupo 17", "Grupo 2", "Grupo 16"],
+    resposta: 0,
+    explicacao: "O material identifica o grupo 18 como gases nobres."
+  },,
+
+
+  {
+    id: 199,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Universitário",
+    tema: "Moléculas",
+    tipo: "Conhecimento",
+    pergunta: "As moléculas são constituídas por:",
+    opcoes: ["Átomos ligados/associados", "Misturas separadas", "Apenas iões livres", "Somente protões"],
+    resposta: 0,
+    explicacao: "O tema das moléculas aborda sua constituição por átomos."
+  },,
+
+
+  {
+    id: 200,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Básico",
+    tema: "Moléculas",
+    tipo: "Conhecimento",
+    pergunta: "Uma molécula de substância elementar contém:",
+    opcoes: ["Átomos de um único elemento", "Obrigatoriamente três elementos", "Apenas iões", "Sempre dois elementos diferentes"],
+    resposta: 0,
+    explicacao: "Substâncias elementares são constituídas por átomos de um único elemento."
+  },
+];const bancoQuestoesBloco3_100_questoes = [
+
+  {
+    id: 201,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Médio",
+    tema: "Moléculas",
+    tipo: "Aplicação",
+    pergunta: "Uma molécula de substância composta contém:",
+    opcoes: ["Átomos de elementos diferentes", "Apenas um tipo de átomo", "Somente electrões", "Nenhum átomo"],
+    resposta: 0,
+    explicacao: "Substâncias compostas apresentam mais de um elemento na constituição."
+  },,
+
+
+  {
+    id: 202,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Avançado",
+    tema: "Ligações covalentes",
+    tipo: "Conhecimento",
+    pergunta: "A ligação covalente envolve:",
+    opcoes: ["Partilha de electrões entre átomos", "Transferência de massa do recipiente", "Filtração", "Separação magnética"],
+    resposta: 0,
+    explicacao: "O material da 8ª classe estuda ligações covalentes entre átomos."
+  },,
+
+
+  {
+    id: 203,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Universitário",
+    tema: "Ligações covalentes",
+    tipo: "Conhecimento",
+    pergunta: "Uma ligação covalente pode ser:",
+    opcoes: ["Polar ou apolar", "Somente metálica", "Somente iónica", "Apenas magnética"],
+    resposta: 0,
+    explicacao: "O programa inclui ligações covalentes polares e apolares."
+  },,
+
+
+  {
+    id: 204,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Básico",
+    tema: "Ligações covalentes",
+    tipo: "Aplicação",
+    pergunta: "Uma ligação covalente simples envolve:",
+    opcoes: ["Um par de electrões partilhado", "Três pares obrigatoriamente", "Nenhum electrão", "Apenas protões"],
+    resposta: 0,
+    explicacao: "No modelo escolar, ligação simples corresponde à partilha de um par de electrões."
+  },,
+
+
+  {
+    id: 205,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Médio",
+    tema: "Ligações covalentes",
+    tipo: "Conhecimento",
+    pergunta: "Uma ligação covalente dupla envolve:",
+    opcoes: ["Dois pares de electrões partilhados", "Um electrão", "Três protões", "Nenhum par"],
+    resposta: 0,
+    explicacao: "Uma ligação dupla corresponde a dois pares de electrões partilhados."
+  },,
+
+
+  {
+    id: 206,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Avançado",
+    tema: "Ligações covalentes",
+    tipo: "Conhecimento",
+    pergunta: "Uma ligação covalente tripla envolve:",
+    opcoes: ["Três pares de electrões partilhados", "Um par", "Dois protões", "Nenhum electrão"],
+    resposta: 0,
+    explicacao: "Uma ligação tripla corresponde a três pares de electrões partilhados."
+  },,
+
+
+  {
+    id: 207,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Universitário",
+    tema: "Ligações covalentes",
+    tipo: "Aplicação",
+    pergunta: "A ligação dativa é estudada como:",
+    opcoes: ["Um tipo de ligação covalente", "Um método de separação", "Um estado físico", "Uma família periódica"],
+    resposta: 0,
+    explicacao: "O programa inclui a ligação dativa no estudo das ligações covalentes."
+  },,
+
+
+  {
+    id: 208,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Básico",
+    tema: "Massa molecular relativa",
+    tipo: "Conhecimento",
+    pergunta: "A massa molecular relativa é obtida a partir da:",
+    opcoes: ["Soma das massas atómicas relativas dos átomos da molécula", "Subtracção dos volumes", "Média das temperaturas", "Soma dos números de períodos"],
+    resposta: 0,
+    explicacao: "O material define Mr como soma das massas atómicas relativas dos átomos constituintes."
+  },,
+
+
+  {
+    id: 209,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Médio",
+    tema: "Massa molecular relativa",
+    tipo: "Conhecimento",
+    pergunta: "Para H2O, usando Ar(H)=1 e Ar(O)=16, a massa molecular relativa é:",
+    opcoes: ["18", "17", "16", "20"],
+    resposta: 0,
+    explicacao: "Mr(H2O)=2×1+16=18."
+  },,
+
+
+  {
+    id: 210,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Avançado",
+    tema: "Massa molecular relativa",
+    tipo: "Aplicação",
+    pergunta: "Para CO2, usando Ar(C)=12 e Ar(O)=16, a massa molecular relativa é:",
+    opcoes: ["28", "32", "44", "48"],
+    resposta: 2,
+    explicacao: "Mr(CO2)=12+2×16=44."
+  },,
+
+
+  {
+    id: 211,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Universitário",
+    tema: "Lei das tríades",
+    tipo: "Conhecimento",
+    pergunta: "A média aritmética de 7 e 39 é:",
+    opcoes: ["23", "21", "46", "16"],
+    resposta: 0,
+    explicacao: "(7+39)/2 = 23, valor usado no exemplo da tríade Li-Na-K."
+  },,
+
+
+  {
+    id: 212,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Básico",
+    tema: "Lei das tríades",
+    tipo: "Conhecimento",
+    pergunta: "Na tríade de Döbereiner Li, Na e K, o elemento central é:",
+    opcoes: ["Sódio", "Lítio", "Potássio", "Oxigénio"],
+    resposta: 0,
+    explicacao: "O exemplo do material apresenta lítio, sódio e potássio, com sódio no centro."
+  },,
+
+
+  {
+    id: 213,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Médio",
+    tema: "Lei das oitavas",
+    tipo: "Aplicação",
+    pergunta: "A Lei das oitavas de Newlands relacionava a repetição das propriedades ao:",
+    opcoes: ["Oitavo elemento", "Segundo elemento", "Décimo sexto elemento", "Primeiro elemento apenas"],
+    resposta: 0,
+    explicacao: "Newlands observou repetição das propriedades no oitavo elemento."
+  },,
+
+
+  {
+    id: 214,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Avançado",
+    tema: "Mendeleyev",
+    tipo: "Conhecimento",
+    pergunta: "Mendeleyev organizou inicialmente os elementos considerando principalmente:",
+    opcoes: ["Massas atómicas e propriedades periódicas", "Volume molar", "Constante de Avogadro", "Ponto de fusão apenas"],
+    resposta: 0,
+    explicacao: "O material explica que Mendeleyev organizou segundo massas atómicas, enquanto a tabela moderna usa número atómico."
+  },,
+
+
+  {
+    id: 215,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Universitário",
+    tema: "Tabela periódica",
+    tipo: "Conhecimento",
+    pergunta: "Actualmente, segundo o material, são conhecidos:",
+    opcoes: ["118 elementos", "18 elementos", "7 elementos", "60 elementos"],
+    resposta: 0,
+    explicacao: "O material informa que actualmente são conhecidos 118 elementos."
+  },,
+
+
+  {
+    id: 216,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Básico",
+    tema: "Famílias periódicas",
+    tipo: "Aplicação",
+    pergunta: "Se um elemento está no grupo 17, ele pertence aos:",
+    opcoes: ["Halogéneos", "Gases nobres", "Metais alcalinos", "Calcogénios"],
+    resposta: 0,
+    explicacao: "Grupo 17 é a família dos halogéneos."
+  },,
+
+
+  {
+    id: 217,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Médio",
+    tema: "Famílias periódicas",
+    tipo: "Conhecimento",
+    pergunta: "Se um elemento está no grupo 18, ele pertence aos:",
+    opcoes: ["Gases nobres", "Halogéneos", "Metais alcalinos", "Alcalino-terrosos"],
+    resposta: 0,
+    explicacao: "Grupo 18 é a família dos gases nobres."
+  },,
+
+
+  {
+    id: 218,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Avançado",
+    tema: "Periodicidade",
+    tipo: "Conhecimento",
+    pergunta: "Se dois elementos estão no mesmo grupo, é razoável esperar:",
+    opcoes: ["Comportamento químico semelhante", "Mesmo número atómico", "Mesmo número de massa", "Mesma quantidade de neutrões"],
+    resposta: 0,
+    explicacao: "O material relaciona elementos do mesmo grupo com propriedades e comportamento químico semelhantes."
+  },,
+
+
+  {
+    id: 219,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Universitário",
+    tema: "Periodicidade",
+    tipo: "Aplicação",
+    pergunta: "Se dois elementos estão no mesmo período, eles têm em comum:",
+    opcoes: ["O número de camadas electrónicas", "O número de protões", "A massa atómica", "O símbolo químico"],
+    resposta: 0,
+    explicacao: "O período relaciona-se ao número de camadas electrónicas."
+  },,
+
+
+  {
+    id: 220,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Básico",
+    tema: "Número atómico",
+    tipo: "Conhecimento",
+    pergunta: "Um átomo com 11 protões possui número atómico:",
+    opcoes: ["11", "22", "10", "12"],
+    resposta: 0,
+    explicacao: "O número atómico é igual ao número de protões."
+  },,
+
+
+  {
+    id: 221,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Médio",
+    tema: "Número de massa",
+    tipo: "Conhecimento",
+    pergunta: "Um átomo com 12 protões e 12 neutrões possui número de massa:",
+    opcoes: ["12", "24", "0", "144"],
+    resposta: 1,
+    explicacao: "A = p+n = 12+12 = 24."
+  },,
+
+
+  {
+    id: 222,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Avançado",
+    tema: "Número de massa",
+    tipo: "Aplicação",
+    pergunta: "Um átomo com A=35 e Z=17 possui quantos neutrões?",
+    opcoes: ["18", "17", "35", "52"],
+    resposta: 0,
+    explicacao: "N = A-Z = 35-17 = 18."
+  },,
+
+
+  {
+    id: 223,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Universitário",
+    tema: "Estrutura atómica",
+    tipo: "Conhecimento",
+    pergunta: "Um átomo neutro com Z=8 possui:",
+    opcoes: ["8 electrões", "16 electrões", "7 electrões", "0 electrões"],
+    resposta: 0,
+    explicacao: "Num átomo neutro, número de electrões = número de protões = Z."
+  },,
+
+
+  {
+    id: 224,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Básico",
+    tema: "Configuração electrónica",
+    tipo: "Conhecimento",
+    pergunta: "Um elemento possui configuração por camadas 2.8.1. Ele apresenta:",
+    opcoes: ["1 electrão de valência", "8 electrões de valência", "2 electrões de valência", "11 electrões de valência"],
+    resposta: 0,
+    explicacao: "A última camada contém 1 electrão."
+  },,
+
+
+  {
+    id: 225,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Médio",
+    tema: "Configuração electrónica",
+    tipo: "Aplicação",
+    pergunta: "Um elemento com configuração 2.8.7 possui:",
+    opcoes: ["7 electrões de valência", "2 electrões de valência", "8 electrões de valência", "17 electrões de valência"],
+    resposta: 0,
+    explicacao: "A última camada contém 7 electrões."
+  },,
+
+
+  {
+    id: 226,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Avançado",
+    tema: "Configuração electrónica",
+    tipo: "Conhecimento",
+    pergunta: "Um elemento com configuração 2.8.8 possui:",
+    opcoes: ["8 electrões na camada de valência", "2 electrões na camada de valência", "18 electrões de valência", "Nenhum electrão"],
+    resposta: 0,
+    explicacao: "A terceira camada contém 8 electrões."
+  },,
+
+
+  {
+    id: 227,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Universitário",
+    tema: "Tabela periódica",
+    tipo: "Conhecimento",
+    pergunta: "Qual sequência representa grupos e períodos correctamente?",
+    opcoes: ["Grupo = coluna; período = linha", "Grupo = linha; período = coluna", "Ambos são linhas", "Ambos são colunas"],
+    resposta: 0,
+    explicacao: "Na tabela periódica, grupos são colunas e períodos são linhas."
+  },,
+
+
+  {
+    id: 228,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Básico",
+    tema: "Tabela periódica",
+    tipo: "Aplicação",
+    pergunta: "O estudo dos metais e não-metais pertence ao tema:",
+    opcoes: ["Tabela periódica dos elementos", "Quantidade em Química", "Petróleo", "Grupo 16 apenas"],
+    resposta: 0,
+    explicacao: "O programa da 8ª classe inclui metais e não-metais no tema da tabela periódica."
+  },,
+
+
+  {
+    id: 229,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Médio",
+    tema: "Raio atómico",
+    tipo: "Conhecimento",
+    pergunta: "A periodicidade do raio atómico refere-se à variação periódica do:",
+    opcoes: ["Tamanho dos átomos", "Número de moléculas", "Volume do laboratório", "Ponto de ebulição da água"],
+    resposta: 0,
+    explicacao: "O programa aborda a periodicidade do tamanho dos átomos/raio atómico."
+  },,
+
+
+  {
+    id: 230,
+    disciplina: "Química",
+    classe: "8ª",
+    nivel: "Avançado",
+    tema: "Programa da 8ª classe",
+    tipo: "Conhecimento",
+    pergunta: "Qual conjunto contém apenas temas da 8ª classe?",
+    opcoes: ["Átomos, tabela periódica e moléculas", "Petróleo, grupo 16 e mol", "Misturas, densidade e Lavoisier", "Ácidos, bases e sais"],
+    resposta: 0,
+    explicacao: "Esses três temas correspondem ao programa apresentado para a 8ª classe."
+  },,
+
+
+  {
+    id: 231,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Universitário",
+    tema: "Grupo 16",
+    tipo: "Aplicação",
+    pergunta: "O grupo 16 da tabela periódica é conhecido como grupo dos:",
+    opcoes: ["Calcogénios", "Halogéneos", "Gases nobres", "Metais alcalinos"],
+    resposta: 0,
+    explicacao: "O material identifica o grupo 16 como calcogénios."
+  },,
+
+
+  {
+    id: 232,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Básico",
+    tema: "Grupo 16",
+    tipo: "Conhecimento",
+    pergunta: "O grupo 16 ocupa a:",
+    opcoes: ["Décima sexta coluna/grupo", "Sétima coluna", "Décima oitava coluna", "Segunda coluna"],
+    resposta: 0,
+    explicacao: "O grupo 16 é a décima sexta coluna da tabela periódica."
+  },,
+
+
+  {
+    id: 233,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Médio",
+    tema: "Grupo 16",
+    tipo: "Conhecimento",
+    pergunta: "Segundo o material, os elementos do grupo 16 têm:",
+    opcoes: ["6 electrões de valência", "1 electrão de valência", "7 electrões de valência", "8 electrões de valência"],
+    resposta: 0,
+    explicacao: "Os elementos do grupo 16 possuem seis electrões de valência."
+  },,
+
+
+  {
+    id: 234,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Avançado",
+    tema: "Grupo 16",
+    tipo: "Aplicação",
+    pergunta: "A tendência indicada para os elementos do grupo 16 é:",
+    opcoes: ["Captar 2 electrões", "Perder 6 protões", "Captar 8 protões", "Perder todos os electrões"],
+    resposta: 0,
+    explicacao: "O material afirma que tendem a captar dois electrões para completar a camada de valência."
+  },,
+
+
+  {
+    id: 235,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Universitário",
+    tema: "Grupo 16",
+    tipo: "Conhecimento",
+    pergunta: "Qual conjunto corresponde aos elementos do grupo 16 apresentados no material de 2022?",
+    opcoes: ["O, S, Se, Te e Po", "F, Cl, Br, I e At", "Li, Na, K, Rb e Cs", "He, Ne, Ar, Kr e Xe"],
+    resposta: 0,
+    explicacao: "O material actualizado lista oxigénio, enxofre, selénio, telúrio e polónio."
+  },,
+
+
+  {
+    id: 236,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Básico",
+    tema: "Oxigénio",
+    tipo: "Conhecimento",
+    pergunta: "O oxigénio é representado pelo símbolo:",
+    opcoes: ["O", "Ox", "Og", "On"],
+    resposta: 0,
+    explicacao: "O símbolo químico do oxigénio é O."
+  },,
+
+
+  {
+    id: 237,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Médio",
+    tema: "Enxofre",
+    tipo: "Aplicação",
+    pergunta: "O enxofre é representado pelo símbolo:",
+    opcoes: ["S", "E", "En", "Sf"],
+    resposta: 0,
+    explicacao: "O símbolo químico do enxofre é S."
+  },,
+
+
+  {
+    id: 238,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Avançado",
+    tema: "Grupo 16",
+    tipo: "Conhecimento",
+    pergunta: "O selénio é representado pelo símbolo:",
+    opcoes: ["Se", "S", "Sl", "Sn"],
+    resposta: 0,
+    explicacao: "O símbolo químico do selénio é Se."
+  },,
+
+
+  {
+    id: 239,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Universitário",
+    tema: "Grupo 16",
+    tipo: "Conhecimento",
+    pergunta: "O telúrio é representado pelo símbolo:",
+    opcoes: ["Te", "T", "Tl", "Tu"],
+    resposta: 0,
+    explicacao: "O símbolo químico do telúrio é Te."
+  },,
+
+
+  {
+    id: 240,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Básico",
+    tema: "Grupo 16",
+    tipo: "Aplicação",
+    pergunta: "O polónio é representado pelo símbolo:",
+    opcoes: ["Po", "P", "Pn", "Pol"],
+    resposta: 0,
+    explicacao: "O símbolo químico do polónio é Po."
+  },,
+
+
+  {
+    id: 241,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Médio",
+    tema: "Configuração electrónica",
+    tipo: "Conhecimento",
+    pergunta: "A configuração por camadas do oxigénio apresentada é:",
+    opcoes: ["2.6", "2.8", "2.8.6", "2.7"],
+    resposta: 0,
+    explicacao: "O material apresenta O como 2.6."
+  },,
+
+
+  {
+    id: 242,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Avançado",
+    tema: "Configuração electrónica",
+    tipo: "Conhecimento",
+    pergunta: "A configuração por camadas do enxofre apresentada é:",
+    opcoes: ["2.8.6", "2.6", "2.8.8", "2.8.18.6"],
+    resposta: 0,
+    explicacao: "O material apresenta S como 2.8.6."
+  },,
+
+
+  {
+    id: 243,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Universitário",
+    tema: "Grupo 16",
+    tipo: "Aplicação",
+    pergunta: "O oxigénio pertence ao:",
+    opcoes: ["Grupo 16", "Grupo 17", "Grupo 18", "Grupo 2"],
+    resposta: 0,
+    explicacao: "O oxigénio é o primeiro elemento apresentado do grupo 16."
+  },,
+
+
+  {
+    id: 244,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Básico",
+    tema: "Programa da 9ª classe",
+    tipo: "Conhecimento",
+    pergunta: "O tema do grupo 16 inclui o estudo de:",
+    opcoes: ["Oxigénio e enxofre", "Somente hidrogénio", "Apenas carbono", "Somente metais alcalinos"],
+    resposta: 0,
+    explicacao: "O programa inclui oxigénio e enxofre em detalhe."
+  },,
+
+
+  {
+    id: 245,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Médio",
+    tema: "Enxofre",
+    tipo: "Conhecimento",
+    pergunta: "A alotropia é estudada especialmente no tema do:",
+    opcoes: ["Enxofre", "Sódio", "Hélio", "Carbonato de cálcio"],
+    resposta: 0,
+    explicacao: "O programa inclui a alotropia no estudo do enxofre."
+  },,
+
+
+  {
+    id: 246,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Avançado",
+    tema: "Óxidos de enxofre",
+    tipo: "Aplicação",
+    pergunta: "Os óxidos de enxofre estão relacionados no programa com:",
+    opcoes: ["Chuva ácida", "Peneiração", "Massa molecular da água apenas", "Separação magnética"],
+    resposta: 0,
+    explicacao: "O material aborda óxidos de enxofre, formação de chuvas ácidas e consequências."
+  },,
+
+
+  {
+    id: 247,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Universitário",
+    tema: "Chuva ácida",
+    tipo: "Conhecimento",
+    pergunta: "Uma consequência ambiental associada à chuva ácida no material é:",
+    opcoes: ["Acidificação de lagos", "Aumento obrigatório do pH dos lagos", "Formação de metais alcalinos", "Peneiração do solo"],
+    resposta: 0,
+    explicacao: "O material menciona acidificação de lagos entre consequências."
+  },,
+
+
+  {
+    id: 248,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Básico",
+    tema: "Chuva ácida",
+    tipo: "Conhecimento",
+    pergunta: "Outra consequência atribuída à chuva ácida é:",
+    opcoes: ["Danos à vegetação", "Produção de oxigénio puro", "Formação de gases nobres", "Aumento da massa atómica"],
+    resposta: 0,
+    explicacao: "O material cita danos à cobertura vegetal."
+  },,
+
+
+  {
+    id: 249,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Médio",
+    tema: "Chuva ácida",
+    tipo: "Aplicação",
+    pergunta: "A chuva ácida pode causar corrosão de:",
+    opcoes: ["Metais e monumentos", "Somente água", "Apenas gases nobres", "Somente areia"],
+    resposta: 0,
+    explicacao: "O material apresenta corrosão de metais e danos a monumentos históricos."
+  },,
+
+
+  {
+    id: 250,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Avançado",
+    tema: "Oxigénio",
+    tipo: "Conhecimento",
+    pergunta: "A molécula de oxigénio é representada por:",
+    opcoes: ["O₂", "O", "O₃₂", "Ox₂"],
+    resposta: 0,
+    explicacao: "A molécula de oxigénio é O₂."
+  },,
+
+
+  {
+    id: 251,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Universitário",
+    tema: "Oxigénio",
+    tipo: "Conhecimento",
+    pergunta: "A molécula de O₂ contém:",
+    opcoes: ["Dois átomos de oxigénio", "Um átomo de oxigénio", "Três átomos de oxigénio", "Dois elementos diferentes"],
+    resposta: 0,
+    explicacao: "O índice 2 indica dois átomos de oxigénio na molécula."
+  },,
+
+
+  {
+    id: 252,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Básico",
+    tema: "Oxigénio",
+    tipo: "Aplicação",
+    pergunta: "O ozono é representado por:",
+    opcoes: ["O₃", "O₂", "O", "O₄"],
+    resposta: 0,
+    explicacao: "A fórmula do ozono é O₃."
+  },,
+
+
+  {
+    id: 253,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Médio",
+    tema: "Oxigénio",
+    tipo: "Conhecimento",
+    pergunta: "O estudo do oxigénio inclui:",
+    opcoes: ["Obtenção no laboratório, propriedades e aplicações", "Somente petróleo", "Somente tabela periódica histórica", "Apenas massa molar"],
+    resposta: 0,
+    explicacao: "Esses tópicos aparecem no programa do grupo 16."
+  },,
+
+
+  {
+    id: 254,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Avançado",
+    tema: "Enxofre",
+    tipo: "Conhecimento",
+    pergunta: "O estudo do enxofre inclui:",
+    opcoes: ["Estrutura, estado natural, alotropia, propriedades e aplicações", "Somente densidade da água", "Apenas isótopos do carbono", "Somente separação de misturas"],
+    resposta: 0,
+    explicacao: "O programa apresenta esses subtemas para o enxofre."
+  },,
+
+
+  {
+    id: 255,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Universitário",
+    tema: "Quantidade em Química",
+    tipo: "Aplicação",
+    pergunta: "O tema 'Quantidade em Química' inclui:",
+    opcoes: ["Mole e constante de Avogadro", "Filtração e decantação", "Halogéneos apenas", "Alotropia somente"],
+    resposta: 0,
+    explicacao: "Mole e constante de Avogadro fazem parte de Quantidade em Química."
+  },,
+
+
+  {
+    id: 256,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Básico",
+    tema: "Mole",
+    tipo: "Conhecimento",
+    pergunta: "Um mol corresponde aproximadamente a:",
+    opcoes: ["6,02 × 10²³ partículas", "6,02 × 10² partículas", "602 partículas", "6,02 partículas"],
+    resposta: 0,
+    explicacao: "O material apresenta a constante de Avogadro como cerca de 6,02×10²³."
+  },,
+
+
+  {
+    id: 257,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Médio",
+    tema: "Constante de Avogadro",
+    tipo: "Conhecimento",
+    pergunta: "A constante de Avogadro é usada para relacionar:",
+    opcoes: ["Quantidade de matéria e número de partículas", "Ponto de fusão e cor", "Volume e densidade somente", "Grupo e período"],
+    resposta: 0,
+    explicacao: "O conceito de mol relaciona grandes quantidades de partículas com quantidade de matéria."
+  },,
+
+
+  {
+    id: 258,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Avançado",
+    tema: "Quantidade de matéria",
+    tipo: "Aplicação",
+    pergunta: "A unidade de quantidade de matéria é:",
+    opcoes: ["mol", "g", "L", "cm³"],
+    resposta: 0,
+    explicacao: "A quantidade de matéria é expressa em mol."
+  },,
+
+
+  {
+    id: 259,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Universitário",
+    tema: "Massa molar",
+    tipo: "Conhecimento",
+    pergunta: "A massa molar relaciona:",
+    opcoes: ["Massa da substância e quantidade de matéria", "Pressão e temperatura apenas", "Número atómico e período", "Densidade e cor"],
+    resposta: 0,
+    explicacao: "O material define massa molar como relação entre massa e quantidade de substância."
+  },,
+
+
+  {
+    id: 260,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Básico",
+    tema: "Massa molar",
+    tipo: "Conhecimento",
+    pergunta: "A expressão da massa molar é:",
+    opcoes: ["M = m/n", "M = n/m", "M = m+n", "M = n-m"],
+    resposta: 0,
+    explicacao: "A relação apresentada é M=m/n."
+  },,
+
+
+  {
+    id: 261,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Médio",
+    tema: "Massa molar",
+    tipo: "Aplicação",
+    pergunta: "Se uma amostra tem massa 18 g e quantidade 1 mol, sua massa molar é:",
+    opcoes: ["18 g/mol", "9 g/mol", "36 g/mol", "1 g/mol"],
+    resposta: 0,
+    explicacao: "M=m/n=18/1=18 g/mol."
+  },,
+
+
+  {
+    id: 262,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Avançado",
+    tema: "Massa molar",
+    tipo: "Conhecimento",
+    pergunta: "Se M=20 g/mol e n=2 mol, a massa é:",
+    opcoes: ["10 g", "20 g", "40 g", "22 g"],
+    resposta: 2,
+    explicacao: "m=M×n=20×2=40 g."
+  },,
+
+
+  {
+    id: 263,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Universitário",
+    tema: "Mole",
+    tipo: "Conhecimento",
+    pergunta: "Se m=36 g e M=18 g/mol, a quantidade de matéria é:",
+    opcoes: ["2 mol", "18 mol", "54 mol", "0,5 mol"],
+    resposta: 0,
+    explicacao: "n=m/M=36/18=2 mol."
+  },,
+
+
+  {
+    id: 264,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Básico",
+    tema: "Volume molar",
+    tipo: "Aplicação",
+    pergunta: "O volume molar de um gás é estudado no tema:",
+    opcoes: ["Quantidade em Química", "História da Química", "Separação de misturas", "Grupo 1"],
+    resposta: 0,
+    explicacao: "O programa da 9ª classe inclui volume molar de um gás."
+  },,
+
+
+  {
+    id: 265,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Médio",
+    tema: "Massa molecular relativa",
+    tipo: "Conhecimento",
+    pergunta: "Massa molecular relativa é obtida pela:",
+    opcoes: ["Soma das massas atómicas relativas dos átomos da molécula", "Multiplicação de volumes", "Subtracção dos números atómicos", "Divisão da temperatura"],
+    resposta: 0,
+    explicacao: "A definição segue a soma das massas atómicas relativas."
+  },,
+
+
+  {
+    id: 266,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Avançado",
+    tema: "Massa molecular relativa",
+    tipo: "Conhecimento",
+    pergunta: "Para H₂O, com H=1 e O=16, Mr é:",
+    opcoes: ["18", "16", "17", "20"],
+    resposta: 0,
+    explicacao: "2×1+16=18."
+  },,
+
+
+  {
+    id: 267,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Universitário",
+    tema: "Massa molecular relativa",
+    tipo: "Aplicação",
+    pergunta: "Para CO₂, com C=12 e O=16, Mr é:",
+    opcoes: ["44", "28", "32", "12"],
+    resposta: 0,
+    explicacao: "12+2×16=44."
+  },,
+
+
+  {
+    id: 268,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Básico",
+    tema: "Química do carbono",
+    tipo: "Conhecimento",
+    pergunta: "A Química do carbono inclui o estudo de:",
+    opcoes: ["Compostos orgânicos e inorgânicos", "Apenas gases nobres", "Somente grupo 17", "Apenas densidade"],
+    resposta: 0,
+    explicacao: "O programa inicia a Química do carbono distinguindo compostos orgânicos e inorgânicos."
+  },,
+
+
+  {
+    id: 269,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Médio",
+    tema: "Química do carbono",
+    tipo: "Conhecimento",
+    pergunta: "Os compostos orgânicos estudados podem ser:",
+    opcoes: ["Naturais e sintéticos", "Somente naturais", "Somente metálicos", "Somente gases"],
+    resposta: 0,
+    explicacao: "O programa inclui compostos orgânicos naturais e sintéticos."
+  },,
+
+
+  {
+    id: 270,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Avançado",
+    tema: "Carbono",
+    tipo: "Aplicação",
+    pergunta: "O átomo central do tema 'Química do carbono' é:",
+    opcoes: ["Carbono", "Oxigénio", "Enxofre", "Sódio"],
+    resposta: 0,
+    explicacao: "O programa possui o subtema 'o átomo de carbono'."
+  },,
+
+
+  {
+    id: 271,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Universitário",
+    tema: "Hidrocarbonetos",
+    tipo: "Conhecimento",
+    pergunta: "Hidrocarbonetos são estudados em:",
+    opcoes: ["Química do carbono", "Grupo 16", "Separação de misturas", "História da tabela"],
+    resposta: 0,
+    explicacao: "O programa inclui hidrocarbonetos na Química do carbono."
+  },,
+
+
+  {
+    id: 272,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Básico",
+    tema: "Petróleo",
+    tipo: "Conhecimento",
+    pergunta: "O petróleo é estudado em:",
+    opcoes: ["Química do carbono", "Somente tabela periódica", "Grupo 18", "Constituição do átomo da 8ª"],
+    resposta: 0,
+    explicacao: "O petróleo é o quarto subtema da Química do carbono."
+  },,
+
+
+  {
+    id: 273,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Médio",
+    tema: "Hidrocarbonetos",
+    tipo: "Aplicação",
+    pergunta: "Um hidrocarboneto é constituído por:",
+    opcoes: ["Carbono e hidrogénio", "Carbono e oxigénio obrigatoriamente", "Oxigénio e enxofre", "Sódio e cloro"],
+    resposta: 0,
+    explicacao: "Pelo próprio termo e conteúdo de Química do carbono, hidrocarbonetos são compostos de C e H."
+  },,
+
+
+  {
+    id: 274,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Avançado",
+    tema: "Programa da 9ª classe",
+    tipo: "Conhecimento",
+    pergunta: "Qual conjunto contém apenas temas da 9ª classe?",
+    opcoes: ["Grupo 16, quantidade em Química e Química do carbono", "Misturas, densidade e estados físicos", "Tríades, oitavas e átomos apenas", "Ácidos, bases e sais"],
+    resposta: 0,
+    explicacao: "Esses são os três grandes temas apresentados no programa da 9ª classe."
+  },,
+
+
+  {
+    id: 275,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Universitário",
+    tema: "Configuração electrónica",
+    tipo: "Conhecimento",
+    pergunta: "Um elemento com configuração 2.8.18.6 pertence ao:",
+    opcoes: ["Grupo 16", "Grupo 18", "Grupo 6", "Grupo 2"],
+    resposta: 0,
+    explicacao: "A configuração termina em 6 electrões de valência, correspondendo ao grupo 16 no material."
+  },,
+
+
+  {
+    id: 276,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Básico",
+    tema: "Grupo 16",
+    tipo: "Aplicação",
+    pergunta: "Se um elemento do grupo 16 capta 2 electrões, ele tende a:",
+    opcoes: ["Completar a camada de valência", "Perder todos os protões", "Duplicar o número atómico", "Tornar-se gás nobre fisicamente"],
+    resposta: 0,
+    explicacao: "A captação de dois electrões é apresentada como tendência para completar a camada de valência."
+  },,
+
+
+  {
+    id: 277,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Médio",
+    tema: "Grupo 16",
+    tipo: "Conhecimento",
+    pergunta: "A palavra calcogénio é relacionada no material com:",
+    opcoes: ["Formadores de cobre", "Formadores de água", "Gases nobres", "Metais alcalinos"],
+    resposta: 0,
+    explicacao: "O material explica a origem do termo calcogénio como formadores de cobre."
+  },,
+
+
+  {
+    id: 278,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Avançado",
+    tema: "Compostos do grupo 16",
+    tipo: "Conhecimento",
+    pergunta: "Um exemplo de composto citado como sulfureto é:",
+    opcoes: ["Cu₂S", "H₂O", "CO₂", "NaCl"],
+    resposta: 0,
+    explicacao: "Cu₂S é citado no material como sulfureto de cobre."
+  },,
+
+
+  {
+    id: 279,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Universitário",
+    tema: "Compostos do grupo 16",
+    tipo: "Aplicação",
+    pergunta: "O composto CuFeS₂ é citado como:",
+    opcoes: ["Sulfureto de ferro e cobre/Calcopirite", "Água", "Óxido de carbono", "Cloreto de sódio"],
+    resposta: 0,
+    explicacao: "O material cita CuFeS₂ como sulfureto de ferro e cobre (calcopirite)."
+  },,
+
+
+  {
+    id: 280,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Básico",
+    tema: "Óxidos",
+    tipo: "Conhecimento",
+    pergunta: "A fórmula CuO é um exemplo de:",
+    opcoes: ["Óxido de cobre", "Sulfureto de cobre", "Hidrocarboneto", "Gás nobre"],
+    resposta: 0,
+    explicacao: "O material cita CuO entre compostos formados por elementos do grupo 16."
+  },,
+
+
+  {
+    id: 281,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Médio",
+    tema: "Chuva ácida",
+    tipo: "Conhecimento",
+    pergunta: "A chuva ácida pode afectar:",
+    opcoes: ["Ecossistemas aquáticos e vegetação", "Somente gases nobres", "Apenas o interior dos átomos", "Somente a tabela periódica"],
+    resposta: 0,
+    explicacao: "O material aborda impactos sobre lagos e vegetação."
+  },,
+
+
+  {
+    id: 282,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Avançado",
+    tema: "Chuva ácida",
+    tipo: "Aplicação",
+    pergunta: "Robert Angus Smith é associado no material à criação do termo:",
+    opcoes: ["Chuva ácida", "Mol", "Tabela periódica", "Alotropia"],
+    resposta: 0,
+    explicacao: "O material cita Robert Angus Smith ao tratar do termo chuva ácida."
+  },,
+
+
+  {
+    id: 283,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Universitário",
+    tema: "Constante de Avogadro",
+    tipo: "Conhecimento",
+    pergunta: "A quantidade 6,02×10²³ é chamada de:",
+    opcoes: ["Constante de Avogadro", "Número atómico", "Número de massa", "Massa molar"],
+    resposta: 0,
+    explicacao: "É a constante/número de Avogadro."
+  },,
+
+
+  {
+    id: 284,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Básico",
+    tema: "Mole",
+    tipo: "Conhecimento",
+    pergunta: "Em 1 mol de qualquer entidade especificada, há aproximadamente:",
+    opcoes: ["6,02×10²³ entidades", "6,02×10² entidades", "6,02 entidades", "602 entidades"],
+    resposta: 0,
+    explicacao: "O conceito de mol usa a constante de Avogadro."
+  },,
+
+
+  {
+    id: 285,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Médio",
+    tema: "Mole",
+    tipo: "Aplicação",
+    pergunta: "Se há 2 mol de partículas, usando NA=6,02×10²³, o número de partículas é:",
+    opcoes: ["1,204×10²⁴", "3,01×10²³", "6,02×10²³", "12,04×10²³"],
+    resposta: 0,
+    explicacao: "N = n×NA = 2×6,02×10²³ = 1,204×10²⁴."
+  },,
+
+
+  {
+    id: 286,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Avançado",
+    tema: "Mole",
+    tipo: "Conhecimento",
+    pergunta: "Se uma amostra possui 3,01×10²³ partículas, usando NA=6,02×10²³, ela corresponde a:",
+    opcoes: ["0,5 mol", "1 mol", "2 mol", "3 mol"],
+    resposta: 0,
+    explicacao: "n=N/NA=(3,01×10²³)/(6,02×10²³)=0,5 mol."
+  },,
+
+
+  {
+    id: 287,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Universitário",
+    tema: "Mole",
+    tipo: "Conhecimento",
+    pergunta: "A relação N=n×NA permite calcular:",
+    opcoes: ["Número de partículas a partir de mol", "Ponto de fusão", "Raio atómico", "Número de grupos"],
+    resposta: 0,
+    explicacao: "A relação usa a constante de Avogadro para converter mol em número de partículas."
+  },,
+
+
+  {
+    id: 288,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Básico",
+    tema: "Massa molar",
+    tipo: "Aplicação",
+    pergunta: "Se M=44 g/mol e n=0,5 mol, a massa é:",
+    opcoes: ["22 g", "44 g", "88 g", "0,5 g"],
+    resposta: 0,
+    explicacao: "m=M×n=44×0,5=22 g."
+  },,
+
+
+  {
+    id: 289,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Médio",
+    tema: "Massa molar",
+    tipo: "Conhecimento",
+    pergunta: "Se m=22 g e M=44 g/mol, n é:",
+    opcoes: ["0,5 mol", "2 mol", "44 mol", "66 mol"],
+    resposta: 0,
+    explicacao: "n=m/M=22/44=0,5 mol."
+  },,
+
+
+  {
+    id: 290,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Avançado",
+    tema: "Programa da 9ª classe",
+    tipo: "Conhecimento",
+    pergunta: "Qual sequência representa correctamente os três temas principais da 9ª classe?",
+    opcoes: ["Grupo 16 → Quantidade em Química → Química do carbono", "Carbono → Misturas → Gases nobres", "Petróleo → Filtração → Átomos", "Grupo 1 → Grupo 2 → Grupo 17"],
+    resposta: 0,
+    explicacao: "É a sequência apresentada no programa da 9ª classe."
+  },,
+
+
+  {
+    id: 291,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Universitário",
+    tema: "Integração de conteúdos",
+    tipo: "Aplicação",
+    pergunta: "Um estudante calcula Mr de H₂O e depois converte massa em mol. Ele está a aplicar conteúdos de:",
+    opcoes: ["Quantidade em Química", "Separação de misturas", "História da Química", "Grupo 17"],
+    resposta: 0,
+    explicacao: "Mr, massa molar e mol pertencem ao tema Quantidade em Química."
+  },,
+
+
+  {
+    id: 292,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Básico",
+    tema: "Integração de conteúdos",
+    tipo: "Conhecimento",
+    pergunta: "Um estudante identifica um elemento com 6 electrões de valência e analisa sua tendência de captar dois electrões. O tema é:",
+    opcoes: ["Grupo 16", "Petróleo", "Misturas", "Moléculas da 7ª"],
+    resposta: 0,
+    explicacao: "Essas características são centrais no estudo do grupo 16."
+  },,
+
+
+  {
+    id: 293,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Médio",
+    tema: "Integração de conteúdos",
+    tipo: "Conhecimento",
+    pergunta: "Um estudante analisa hidrocarbonetos e petróleo. Está a estudar:",
+    opcoes: ["Química do carbono", "Grupo 16", "Tabela periódica histórica", "Separação magnética"],
+    resposta: 0,
+    explicacao: "Hidrocarbonetos e petróleo são subtemas da Química do carbono."
+  },,
+
+
+  {
+    id: 294,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Avançado",
+    tema: "Hidrocarbonetos",
+    tipo: "Aplicação",
+    pergunta: "Se uma molécula contém 2 átomos de C e 6 de H, sua fórmula é:",
+    opcoes: ["C₂H₆", "C₆H₂", "CH₈", "C₂H₃"],
+    resposta: 0,
+    explicacao: "Os índices indicam dois átomos de carbono e seis de hidrogénio."
+  },,
+
+
+  {
+    id: 295,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Universitário",
+    tema: "Massa molecular relativa",
+    tipo: "Conhecimento",
+    pergunta: "Usando Ar(C)=12 e Ar(H)=1, a massa molecular relativa de C₂H₆ é:",
+    opcoes: ["30", "24", "18", "14"],
+    resposta: 0,
+    explicacao: "Mr=2×12+6×1=30."
+  },,
+
+
+  {
+    id: 296,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Básico",
+    tema: "Massa molar",
+    tipo: "Conhecimento",
+    pergunta: "Se 2 mol de C₂H₆ têm M=30 g/mol, sua massa é:",
+    opcoes: ["60 g", "30 g", "15 g", "32 g"],
+    resposta: 0,
+    explicacao: "m=M×n=30×2=60 g."
+  },,
+
+
+  {
+    id: 297,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Médio",
+    tema: "Petróleo",
+    tipo: "Aplicação",
+    pergunta: "O petróleo aparece no programa como parte de:",
+    opcoes: ["Química do carbono", "Grupo 16 exclusivamente", "Tabela periódica de Mendeleyev", "Separação de misturas"],
+    resposta: 0,
+    explicacao: "O petróleo é subtema da Química do carbono."
+  },,
+
+
+  {
+    id: 298,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Avançado",
+    tema: "Química do carbono",
+    tipo: "Conhecimento",
+    pergunta: "A distinção entre compostos orgânicos naturais e sintéticos pertence a:",
+    opcoes: ["Química do carbono", "Quantidade em Química", "Grupo 16", "Estados físicos"],
+    resposta: 0,
+    explicacao: "Essa distinção aparece no primeiro subtema da Química do carbono."
+  },,
+
+
+  {
+    id: 299,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Universitário",
+    tema: "Quantidade em Química",
+    tipo: "Conhecimento",
+    pergunta: "Qual alternativa contém somente grandezas/conceitos de Quantidade em Química?",
+    opcoes: ["Mol, massa molar e constante de Avogadro", "Filtração, densidade e decantação", "Grupo 16, enxofre e oxigénio", "Carbono, petróleo e hidrocarbonetos"],
+    resposta: 0,
+    explicacao: "Mol, massa molar e Avogadro fazem parte de Quantidade em Química."
+  },,
+
+
+  {
+    id: 300,
+    disciplina: "Química",
+    classe: "9ª",
+    nivel: "Básico",
+    tema: "Grupo 16",
+    tipo: "Aplicação",
+    pergunta: "Qual afirmação resume correctamente o conteúdo do grupo 16?",
+    opcoes: ["Os elementos têm 6 electrões de valência e tendência de captar 2 electrões", "Todos possuem 1 electrão de valência", "Todos são gases nobres", "Todos são metais alcalinos"],
+    resposta: 0,
+    explicacao: "O material destaca seis electrões de valência e tendência para captar dois electrões."
+  }
+];
+
+
 // const bancoQuestoesBloco1 = [
 //     {
 //         id: 1,
