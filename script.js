@@ -1824,8 +1824,8 @@ const bancoQuestoesBloco1 = [
     resposta: 0,
     explicacao: "A situação reúne precisamente os conceitos estudados no grupo 16: posição na tabela, seis electrões de valência e tendência para captar dois electrões."
   }
-
-];const bancoQuestoesBloco2_100_questoes = [
+];
+const bancoQuestoesBloco2 = [
   {
     id: 101,
     disciplina: "Química",
@@ -3224,7 +3224,8 @@ const bancoQuestoesBloco1 = [
     resposta: 0,
     explicacao: "Substâncias elementares são constituídas por átomos de um único elemento."
   },
-];const bancoQuestoesBloco3_100_questoes = [
+];
+const bancoQuestoesBloco3 = [
 
   {
     id: 201,
